@@ -1,0 +1,576 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QA DataSpace: Browsing DataSpace</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="DSpace 5.5-SNAPSHOT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+        <link rel="shortcut icon" href="/jspui/favicon.ico" type="image/x-icon"/>
+
+        <!-- Princeton University Customization to add rendering of mathematical formulae by MathJAX -->
+        <!-- This assumes that /www/MathJax leads to a local copy if the MathJax Javascript package; see http://www.mathjax.org/  -->
+        <script type="text/javascript" src="/www/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="/jspui/static/css/bootstrap/dspace-theme.css" type="text/css" />
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/jspui/open-search/description.xml" title="DSpace"/>
+
+
+  <script type='text/javascript' src='/jspui/static/js/holder.js'></script>
+  <script type="text/javascript" src="/jspui/utils.js"></script>
+    <script type="text/javascript" src="/jspui/static/js/choice-support.js"> </script>
+
+
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/jspui/static/js/html5shiv.js"></script>
+  <script src="/jspui/static/js/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+
+
+    <body class='undernavigation  '>
+    <a class="sr-only" href="#content">Skip navigation</a>
+    <header class="navbar navbar-dspace navbar-fixed-top">
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/jspui">
+        <span class="glyphicon glyphicon-home"> </span>
+        QA DataSpace
+    </a>
+</div>
+<nav class="collapse navbar-collapse bs-navbar-collapse">
+    <ul class="nav navbar-nav">
+
+        <li class='' >
+        <a href="/jspui/about"> About </a>
+        </li>
+
+        <li>
+            <a href="mailto:monikam@princeton.edu"> Contact </a>
+        </li>
+
+        <li class="">
+            <a href="/jspui/help/index.html" target="dspacepopup">
+                Help
+            </a>
+        </li>
+    </ul>
+
+    <div class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+            <!-- SEARCH -->
+            <li>
+                <a href="/jspui/simple-search">
+                    <span class="glyphicon glyphicon-search"></span> Search </a>
+            </li>
+
+            <!-- BROWSE -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Explore <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/jspui/community-list">All Communities &amp; Collections</a></li>
+
+                    <li class="divider"></li>
+
+
+                    <li><a href="/jspui/handle/88435/dsp01k643b120w">
+                        Astrophysical Sciences</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01bg257f052">
+                        Civil and Environmental Engineering</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp012b88qf40b">
+                        Department of Geosciences</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp011z40ks889">
+                        Department of Slavic Languages and Literatures</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01th83kz360">
+                        Education Research Section</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01st74cq47h">
+                        Faculty Publications</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01c821gj770">
+                        Industrial Relations Section</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01m326m175b">
+                        Liechtenstein Institute on Self-Determination</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp014q77fr339">
+                        Office of Information Technology</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp0147429c369">
+                        Princeton Neuroscience Institute</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01pz50gz45g">
+                        Princeton Plasma Physics Laboratory</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01td96k251d">
+                        Princeton University Doctoral Dissertations, 2011-2015</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01g732d9019">
+                        Princeton University Library</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp019c67wm88m">
+                        Princeton University Senior Theses, 1924-2015</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01h989r3236">
+                        Seeger Center for Hellenic Studies</a></li>
+
+                    <li><a href="/jspui/handle/88435/dsp01g445cd134">
+                        Woodrow Wilson School of Public and International Affairs</a></li>
+
+
+
+                    </ul>
+            </li>
+
+            <!-- LOGIN or USER-SPECIFIC-MENU -->
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                        class="glyphicon glyphicon-user"></span> Login <b
+                        class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="/jspui/mydspace">My DataSpace</a></li>
+
+
+
+
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+</nav>
+
+
+        </div>
+    </header>
+
+
+
+<main id="content" class="MAIN  hdl-88435-dsp017h149p85f hdl-88435-dsp01c821gj770">
+
+
+<div class="container">
+
+
+
+
+
+
+
+    <ol class="breadcrumb btn-success">
+        <li>
+                <a href="/jspui">
+                <span class="glyphicon glyphicon-home"> </span>
+            </a>
+        </li>
+
+       <li><a href="/jspui/handle/88435/dsp01c821gj770">Industrial Relations Section</a></li>    <li><a href="/jspui/handle/88435/dsp017h149p85f">IRS Working Papers</a></li>
+
+    </ol>
+
+
+</div>
+
+
+
+<div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h3>
+    Browsing "IRS Working Papers" by Issue Date
+  </h3>
+
+
+
+
+
+  <div id="browse_navigation" class="well text-center">
+  <form method="get" action="/jspui/handle/88435/dsp017h149p85f/browse">
+      <input type="hidden" name="type" value="dateissued"/>
+      <input type="hidden" name="sort_by" value="2"/>
+      <input type="hidden" name="order" value="DESC"/>
+      <input type="hidden" name="rpp" value="20"/>
+      <input type="hidden" name="etal" value="-1" />
+
+
+
+
+    <span>Jump to a point in the index:</span>
+    <select name="year">
+          <option selected="selected" value="-1">(Choose year)</option>
+
+            <option>2015</option>
+
+            <option>2014</option>
+
+            <option>2013</option>
+
+            <option>2012</option>
+
+            <option>2011</option>
+
+            <option>2010</option>
+
+            <option>2009</option>
+
+            <option>2008</option>
+
+            <option>2007</option>
+
+            <option>2006</option>
+
+            <option>2005</option>
+
+            <option>2004</option>
+
+            <option>2003</option>
+
+            <option>2002</option>
+
+            <option>2001</option>
+
+            <option>2000</option>
+
+            <option>1999</option>
+
+            <option>1998</option>
+
+            <option>1997</option>
+
+            <option>1996</option>
+
+            <option>1995</option>
+
+            <option>1994</option>
+
+            <option>1993</option>
+
+            <option>1992</option>
+
+            <option>1991</option>
+
+            <option>1990</option>
+
+            <option>1985</option>
+            <option>1980</option>
+            <option>1975</option>
+            <option>1970</option>
+            <option>1960</option>
+            <option>1950</option>
+        </select>
+        <select name="month">
+            <option selected="selected" value="-1">(Choose month)</option>
+
+           <option value="1">January</option>
+
+           <option value="2">February</option>
+
+           <option value="3">March</option>
+
+           <option value="4">April</option>
+
+           <option value="5">May</option>
+
+           <option value="6">June</option>
+
+           <option value="7">July</option>
+
+           <option value="8">August</option>
+
+           <option value="9">September</option>
+
+           <option value="10">October</option>
+
+           <option value="11">November</option>
+
+           <option value="12">December</option>
+
+        </select>
+        <input type="submit" class="btn btn-default" value="Go!" />
+        <br/>
+        <label for="starts_with">Or type in a year:</label>
+        <input type="text" name="starts_with" size="4" maxlength="4"/>
+
+  </form>
+  </div>
+
+
+
+
+  <div id="browse_controls" class="well text-center">
+  <form method="get" action="/jspui/handle/88435/dsp017h149p85f/browse">
+    <input type="hidden" name="type" value="dateissued"/>
+
+
+
+
+
+
+    <label for="sort_by">Sort by:</label>
+    <select name="sort_by">
+ <option value="1" >title</option> <option value="2" selected="selected">issue date</option> <option value="3" >author</option> <option value="4" >submit date</option>
+    </select>
+
+    <label for="order">In order:</label>
+    <select name="order">
+      <option value="ASC" >Ascending</option>
+      <option value="DESC" selected="selected">Descending</option>
+    </select>
+
+    <label for="rpp">Results/Page</label>
+    <select name="rpp">
+
+      <option value="5" >5</option>
+
+      <option value="10" >10</option>
+
+      <option value="15" >15</option>
+
+      <option value="20" selected="selected">20</option>
+
+      <option value="25" >25</option>
+
+      <option value="30" >30</option>
+
+      <option value="35" >35</option>
+
+      <option value="40" >40</option>
+
+      <option value="45" >45</option>
+
+      <option value="50" >50</option>
+
+      <option value="55" >55</option>
+
+      <option value="60" >60</option>
+
+      <option value="65" >65</option>
+
+      <option value="70" >70</option>
+
+      <option value="75" >75</option>
+
+      <option value="80" >80</option>
+
+      <option value="85" >85</option>
+
+      <option value="90" >90</option>
+
+      <option value="95" >95</option>
+
+      <option value="100" >100</option>
+
+    </select>
+
+    <label for="etal">Authors/Record:</label>
+    <select name="etal">
+
+      <option value="0" selected="selected">All</option>
+<option value="1" >1</option>
+      <option value="5" >5</option>
+
+      <option value="10" >10</option>
+
+      <option value="15" >15</option>
+
+      <option value="20" >20</option>
+
+      <option value="25" >25</option>
+
+      <option value="30" >30</option>
+
+      <option value="35" >35</option>
+
+      <option value="40" >40</option>
+
+      <option value="45" >45</option>
+
+      <option value="50" >50</option>
+
+    </select>
+
+    <input type="submit" class="btn btn-default" name="submit_browse" value="Update"/>
+
+
+
+  </form>
+  </div>
+<div class="panel panel-primary">
+
+  <div class="panel-heading text-center">
+    Showing results 1 to 20 of 602
+
+
+
+
+
+  &nbsp;<a class="pull-right" href="/jspui/handle/88435/dsp017h149p85f/browse?type=dateissued&amp;sort_by=2&amp;order=DESC&amp;rpp=20&amp;etal=-1&amp;null=&amp;offset=20">next&nbsp;&gt;</a>
+
+  </div>
+
+
+
+  <table align="center" class="table" summary="This table browses all dspace content">
+<tr>
+<th id="t1" class="oddRowEvenCol"><strong>Issue Date</strong></th><th id="t2" class="oddRowOddCol">Title</th><th id="t3" class="oddRowEvenCol">Author(s)</th></tr><tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Nov-2015</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp01dj52w707z">The&#x20;Effects&#x20;of&#x20;School&#x20;Construction&#x20;on&#x20;Student&#x20;and&#x20;District&#x20;Outcomes:&#x20;Evidence&#x20;from&#x20;a&#x20;State-Funded&#x20;Program&#x20;in&#x20;Ohio</a></td><td headers="t3" class="evenRowEvenCol" ><em>Goncalves,&#x20;Felipe&#x20;M.</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Oct-2015</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp019019s485g">Factors&#x20;Determining&#x20;Callbacks&#x20;to&#x20;Job&#x20;Applications&#x20;by&#x20;the&#x20;Unemployed:&#x20;An&#x20;Audit&#x20;Study</a></td><td headers="t3" class="oddRowEvenCol" ><em>Farber,&#x20;Henry&#x20;S.; Silverman,&#x20;Dan; Von&#x20;Wachter,&#x20;Till</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Sep-2015</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp01kw52jb45x">Should&#x20;UI&#x20;Eligibility&#x20;Be&#x20;Expanded&#x20;to&#x20;Low-Earning&#x20;Workers?&#x20;Evidence&#x20;on&#x20;Employment,&#x20;Transfer&#x20;Receipt,&#x20;and&#x20;Income&#x20;from&#x20;Administrative&#x20;Data</a></td><td headers="t3" class="evenRowEvenCol" ><em>Leung,&#x20;Pauline; O¿Leary,&#x20;Christopher</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Jun-2015</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp014f16c5130">Potential&#x20;Unemployment&#x20;Insurance&#x20;Duration&#x20;and&#x20;Labor&#x20;Supply:&#x20;The&#x20;Individual&#x20;and&#x20;Market-Level&#x20;Response&#x20;to&#x20;a&#x20;Benefit&#x20;Cut</a></td><td headers="t3" class="oddRowEvenCol" ><em>Johnston,&#x20;Andrew&#x20;C.; Mas,&#x20;Alexandre</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>May-2015</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp01zk51vk05h">Job&#x20;Loss&#x20;in&#x20;the&#x20;Great&#x20;Recession&#x20;and&#x20;its&#x20;Aftermath:&#x20;U.S.&#x20;Evidence&#x20;from&#x20;the&#x20;Displaced&#x20;Workers&#x20;Survey</a></td><td headers="t3" class="evenRowEvenCol" ><em>Farber,&#x20;Henry</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Feb-2015</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp01sj139419w">A&#x20;Retrospective&#x20;Look&#x20;at&#x20;Rescuing&#x20;and&#x20;Restructuring&#x20;General&#x20;Motors&#x20;and&#x20;Chrysler</a></td><td headers="t3" class="oddRowEvenCol" ><em>Goolsbee,&#x20;Austan&#x20;D.; Krueger,&#x20;Alan&#x20;B.</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Jan-2015</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp019c67wq05f">The&#x20;Effect&#x20;of&#x20;Extended&#x20;Unemployment&#x20;Insurance&#x20;Benefits:&#x20;Evidence&#x20;from&#x20;the&#x20;2012-2013&#x20;Phase-Out</a></td><td headers="t3" class="evenRowEvenCol" ><em>Farber,&#x20;Henry&#x20;S.; Rothstein,&#x20;Jesse; Valletta,&#x20;Robert&#x20;G.</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Jan-2015</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp01f4752j974">The&#x20;Effect&#x20;of&#x20;Unemployment&#x20;Benefits&#x20;on&#x20;the&#x20;Duration&#x20;of&#x20;Unemployment&#x20;Insurance&#x20;Receipt:&#x20;New&#x20;Evidence&#x20;from&#x20;a&#x20;Regression&#x20;Kink&#x20;Design&#x20;in&#x20;Missouri,&#x20;2003-2013</a></td><td headers="t3" class="oddRowEvenCol" ><em>Card,&#x20;David; Johnston,&#x20;Andrew; Leung,&#x20;Pauline; Mas,&#x20;Alexandre; Pei,&#x20;Zhuan</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Jan-2015</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp010z708z67d">An&#x20;Analysis&#x20;of&#x20;the&#x20;Labor&#x20;Market&#x20;for&#x20;Uber¿s&#x20;Driver-Partners&#x20;in&#x20;the&#x20;United&#x20;States</a></td><td headers="t3" class="evenRowEvenCol" ><em>Hall,&#x20;Jonathan&#x20;V.; Krueger,&#x20;Alan&#x20;B.</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Nov-2014</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp016395w932w">Do&#x20;Credit&#x20;Market&#x20;Shocks&#x20;affect&#x20;the&#x20;Real&#x20;Economy?&#x20;Quasi-Experimental&#x20;Evidence&#x20;from&#x20;the&#x20;Great&#x20;Recession&#x20;and&#x20;`Normal¿&#x20;Economic&#x20;Times</a></td><td headers="t3" class="oddRowEvenCol" ><em>Greenstone,&#x20;Michael; Mas,&#x20;Alexandre; Nguyen,&#x20;Hoai-Luu</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Oct-2014</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp01fx719p70r">Why&#x20;You&#x20;Can&#39;t&#x20;Find&#x20;a&#x20;Taxi&#x20;in&#x20;the&#x20;Rain&#x20;and&#x20;Other&#x20;Labor&#x20;Supply&#x20;Lessons&#x20;from&#x20;Cab&#x20;Drivers</a></td><td headers="t3" class="evenRowEvenCol" ><em>Farber,&#x20;Henry</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Oct-2014</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp014b29b826g">Why&#x20;You&#x20;Can&#39;t&#x20;Find&#x20;a&#x20;Taxi&#x20;in&#x20;the&#x20;Rain&#x20;and&#x20;Other&#x20;Labor&#x20;Supply&#x20;Lessons&#x20;from&#x20;Cab&#x20;Drivers</a></td><td headers="t3" class="oddRowEvenCol" ><em>Farber,&#x20;Henry</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Sep-2014</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp018c97ks65d">Does&#x20;Transparency&#x20;Lead&#x20;to&#x20;Pay&#x20;Compression?</a></td><td headers="t3" class="evenRowEvenCol" ><em>Mas,&#x20;Alexandre</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Aug-2014</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp01j098zb318">The&#x20;Evolution&#x20;of&#x20;Rotation&#x20;Group&#x20;Bias:&#x20;Will&#x20;the&#x20;Real&#x20;Unemployment&#x20;Rate&#x20;Please&#x20;Stand&#x20;Up?</a></td><td headers="t3" class="oddRowEvenCol" ><em>Krueger,&#x20;Alan; Mas,&#x20;Alexandre; Niu,&#x20;Xiaotong</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>Aug-2014</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp01b5644r75d">Can&#x20;a&#x20;Summer&#x20;Make&#x20;a&#x20;Difference?&#x20;The&#x20;Impact&#x20;of&#x20;the&#x20;American&#x20;Economic&#x20;Association&#x20;Summer&#x20;Program&#x20;on&#x20;Minority&#x20;Student&#x20;Outcomes</a></td><td headers="t3" class="evenRowEvenCol" ><em>Becker,&#x20;Charles&#x20;M.; Rouse,&#x20;Cecilia&#x20;E.; Chen,&#x20;Mingyu</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Mar-2014</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp01nv9352982">The&#x20;Early&#x20;History&#x20;of&#x20;Program&#x20;Evaluation&#x20;and&#x20;&#x20;the&#x20;Department&#x20;of&#x20;Labor</a></td><td headers="t3" class="oddRowEvenCol" ><em>Ashenfelter,&#x20;Orley</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>20-Jan-2014</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp019880vr11g">A&#x20;Contribution&#x20;to&#x20;the&#x20;Empirics&#x20;of&#x20;Reservation&#x20;Wages</a></td><td headers="t3" class="evenRowEvenCol" ><em>Krueger,&#x20;Alan&#x20;B.; Mueller,&#x20;Andreas&#x20;I.</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Jul-2013</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp01ht24wj54s">Optimal&#x20;Patent&#x20;Term&#x20;and&#x20;Cross-Industry&#x20;Measures&#x20;of&#x20;Patent&#x20;Term&#x20;Sensitivity</a></td><td headers="t3" class="oddRowEvenCol" ><em>Sukhatme,&#x20;Neel&#x20;U.; Cramer,&#x20;Judd&#x20;N.L.</em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right"><strong>4-Nov-2013</strong></td><td headers="t2" class="evenRowOddCol" ><a href="/jspui/handle/88435/dsp01mg74qm23v">Union&#x20;Organizing&#x20;Decisions&#x20;in&#x20;a&#x20;Deteriorating&#x20;Environment:&#x20;The&#x20;Composition&#x20;of&#x20;Representation&#x20;Elections&#x20;and&#x20;the&#x20;Decline&#x20;in&#x20;Turnout</a></td><td headers="t3" class="evenRowEvenCol" ><em>Farber,&#x20;Henry&#x20;S.</em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right"><strong>Nov-2013</strong></td><td headers="t2" class="oddRowOddCol" ><a href="/jspui/handle/88435/dsp015425k982p">Optimal&#x20;Tax&#x20;Salience</a></td><td headers="t3" class="oddRowEvenCol" ><em>Goldin,&#x20;Jacob</em></td></tr>
+</table>
+
+
+
+  <div class="panel-footer text-center">
+    Showing results 1 to 20 of 602
+
+
+
+
+
+  &nbsp;<a class="pull-right" href="/jspui/handle/88435/dsp017h149p85f/browse?type=dateissued&amp;sort_by=2&amp;order=DESC&amp;rpp=20&amp;etal=-1&amp;null=&amp;offset=20">next&nbsp;&gt;</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</main>
+
+             <footer class="navbar navbar-inverse navbar-bottom">
+             <div id="designedby" class="container text-muted">
+             Theme by <a href="http://www.cineca.it"><img
+                                    src="/jspui/image/logo-cineca-small.png"
+                                    alt="Logo CINECA" /></a>
+      <div id="footer_feedback" class="pull-right">
+                                <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
+                                <a target="_blank" href="/jspui/feedback">Feedback</a>
+                                <a href="/jspui/htmlmap"></a></p>
+                                </div>
+      </div>
+    </footer>
+    </body>
+</html>
