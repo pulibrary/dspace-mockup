@@ -1,0 +1,580 @@
+/* ======= Base ======= */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $gray-lightest;
+  font-size: 13px;
+}
+
+.wrapper {
+  margin-bottom: -144px;
+  min-height: 100%;
+
+  /* equal to footer height */
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 144px;
+
+  /* must be the same height as footer */
+}
+
+.footer {
+  height: 144px;
+
+  /* must be the same height as footer */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-sans;
+  font-weight: 300;
+}
+
+p {
+  color: $gray;
+  font-size: 13px;
+}
+
+a {
+  color: $blue-dark;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  color: $gray-darkest;
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.btn {
+  background-clip: padding-box;
+  border-radius: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn .fa {
+  color: $white;
+  margin-right: 5px;
+}
+
+.btn .fa.fa-search {
+  margin-right: 0;
+}
+
+.btn-orange {
+  background: $princeton-orange;
+  border: 1px solid $princeton-orange;
+  color: $white;
+
+  &:hover {
+    background: lighten($princeton-orange, 5);
+    border: 1px solid lighten($princeton-orange, 5);
+  }
+}
+
+.btn-theme {
+  background: $blue-dark;
+  border: 1px solid $blue-dark;
+  color: $white;
+}
+
+.btn-theme:hover {
+  background: $blue-light;
+  border: 1px solid $blue-light;
+  color: $white;
+}
+
+a.btn-cta,
+.btn-cta {
+  background: $princeton-orange;
+  background-clip: padding-box;
+  border-radius: 0;
+  color: $white;
+  font-family: $font-sans;
+  font-size: 18px;
+  line-height: 1.33;
+  padding: 10px 20px;
+}
+
+a.btn-cta:hover,
+.btn-cta:hover {
+  background: $blue-dark;
+  color: $white;
+}
+
+a.btn-cta .fa,
+.btn-cta .fa {
+  color: $white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.form-control {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: $blue-dark;
+  box-shadow: none;
+}
+
+blockquote {
+  font-size: 14px;
+}
+
+blockquote p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.text-highlight {
+  color: $gray-darkest;
+}
+
+.highlight-border {
+  border-color: $blue-dark;
+}
+
+.read-more {
+  display: block;
+  font-size: 13px;
+  transition: all 0.4s ease-in-out;
+}
+
+.read-more .fa {
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+
+.read-more:hover {
+  text-decoration: none;
+}
+
+.carousel-fade .item {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-fade .item.active {
+  opacity: 1;
+}
+
+.topcontrol {
+  background: $blue-light;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 2px;
+  color: $white;
+  display: inline-block;
+  height: 35px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  width: 35px;
+}
+
+.topcontrol:hover {
+  background: $blue-dark;
+}
+
+.topcontrol .fa {
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}
+
+.row-end {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+ul.custom-list-style li {
+  list-style: none;
+}
+
+.date-label {
+  background: $gray-lightest;
+  display: inline-block;
+  font-size: 13px;
+  height: 50px;
+  text-align: center;
+  width: 40px;
+}
+
+.date-label .month {
+  background: $blue-dark;
+  color: $white;
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.date-label .date-number {
+  clear: left;
+  display: block;
+  font-family: $font-sans;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: $blue-dark;
+  border-color: $blue-dark;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: $gray-lightest;
+  border-color: $blue-light;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  margin-bottom: -1px;
+  position: relative;
+}
+
+.tab-content {
+  border: 1px solid $gray-lightest;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.nav > li > a {
+  font-size: 13px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background: inherit;
+}
+
+.nav-tabs > li > a {
+  background: $gray-lightest;
+  background-clip: padding-box;
+  border: 1px solid $gray-lightest;
+  border-bottom: 0;
+  border-radius: 0;
+  color: $gray;
+  margin-right: 0;
+  padding: 5px 15px;
+  transition: all 0s;
+}
+
+.nav-tabs > li {
+  margin-right: 2px;
+}
+
+.nav-tabs > li.active {
+  border-top: 2px solid $blue-dark;
+}
+
+.nav-tabs > li.active a,
+.nav-tabs > li.active a:hover,
+.nav-tabs > li.active a:active,
+.nav-tabs > li.active a:focus {
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background: $gray-lightest;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 1px solid $gray-lightest;
+}
+
+.table > thead > tr > th {
+  border-bottom: 2px solid $blue-light;
+  color: $blue-light;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background: $gray-lightest;
+}
+
+.table-boxed,
+.table-bordered {
+  border: 1px solid $gray-lightest;
+}
+
+.table.table-boxed > thead > tr > th {
+  background: $blue-dark;
+  border-bottom: 0;
+  color: $white;
+}
+
+.panel-group .panel {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.panel-group .panel .panel-heading {
+  background: none;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 0;
+}
+
+.panel-group .panel .panel-heading .panel-title a {
+  color: $blue-dark;
+}
+
+.panel-group .panel .panel-heading .panel-title a:before {
+  content: "\f146";
+  font-family: FontAwesome;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.panel-group .panel .panel-heading .panel-title a.collapsed:before {
+  content: "\f0fe";
+}
+
+.panel-group .panel .panel-body {
+  font-size: 13px;
+}
+
+.panel {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.panel .panel-heading {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.panel .panel-heading h3.panel-title {
+  font-weight: 500;
+}
+
+.panel .panel-heading .label {
+  font-size: 10px;
+}
+
+.panel .panel-footer {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.panel .panel-footer ul {
+  margin-bottom: 0;
+}
+
+.panel .panel-footer ul.list-inline li {
+  margin-bottom: 0;
+}
+
+.panel .panel-footer small {
+  color: $gray-light;
+}
+
+.panel > .list-group .list-group-item:last-child {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.panel-theme {
+  border-color: $blue-dark;
+}
+
+.panel-theme > .panel-heading,
+.panel-theme > .panel-footer {
+  background: $blue-dark;
+  border-color: $blue-dark;
+  color: $white;
+}
+
+.no-margins {
+  margin: 0;
+}
+
+.no-margin-left {
+  margin-left: 0;
+}
+
+.no-margin-right {
+  margin-right: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.label {
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.label.label-theme {
+  background: $blue-dark;
+}
+
+.label .fa {
+  margin-right: 4px;
+}
+
+.label.label-icon-only .fa {
+  margin-right: 0;
+}
+
+.badge.badge-theme {
+  background: $blue-dark;
+}
+
+.badge.badge-default {
+  background: $gray-light;
+}
+
+.promo-badge {
+  display: table;
+  font-size: 20px;
+}
+
+.promo-badge .percentage {
+  color: $white;
+  font-family: $font-sans;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+}
+
+.promo-badge .percentage .off {
+  font-size: 11px;
+  position: absolute;
+  right: -15px;
+  top: 15px;
+}
+
+.promo-badge .desc {
+  font-size: 12px;
+}
+
+.progress-bar-theme {
+  background: $blue-dark;
+}
+
+.img-thumbnail {
+  background-clip: padding-box;
+  border-color: $gray-lightest;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+.cboxLoadedContent,
+.cboxContent {
+  background: none;
+}
+
+.box {
+  background: $gray-lightest;
+  padding: 15px;
+}
+
+.box.box-border {
+  border-left: 5px solid $blue-dark;
+}
+
+.box.box-dark {
+  background: $gray-darkest;
+  color: $white;
+}
+
+.box.box-highlight {
+  background: $blue-dark;
+  color: $white;
+}
+
+.box.box-theme {
+  background: $blue-dark;
+  color: $white;
+}
+
+.box .date-label {
+  background: $white;
+}
+
+.social-icons {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+.social-icons li {
+  float: left;
+}
+
+.social-icons li.row-end {
+  margin-right: 0;
+}
+
+.social-icons a {
+  background: $blue-light;
+  background-clip: padding-box;
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  height: 32px;
+  margin-right: 10px;
+  padding-top: 4px;
+  text-align: center;
+  width: 32px;
+}
+
+.social-icons a:hover {
+  background: $blue-dark;
+}
+
+.social-icons a .fa {
+  color: $white;
+}
+
+.social-icons a .fa:before {
+  font-size: 18px;
+  padding: 0;
+  text-align: center;
+}

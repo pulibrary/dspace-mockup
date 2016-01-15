@@ -1,0 +1,42 @@
+.panel .panel-heading {
+  background: $gray-darkest;
+  color: $white;
+}
+
+.panel.discovery-search-form {
+  .panel-heading {
+    background: none;
+  }
+}
+
+.discovery-search-filters h4 {
+  color: $blue-dark;
+}
+
+h1,
+h2,
+h3.facets {
+  color: $black;
+  font-size: 24px;
+}
+
+.discovery-search-form.panel .panel-heading {
+  padding: 28px 0 0;
+}
+
+.discovery-pagination-controls {
+  background: $white;
+  padding: 10px 15px;
+
+  select {
+    margin-right: 1em;
+  }
+}
+
+.browse-filter select {
+  margin-right: 1em;
+}
+
+.form-option {
+  margin: 1em 0;
+}

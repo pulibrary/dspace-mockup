@@ -1,0 +1,478 @@
+/* ======= Page ======= */
+
+.page-wrapper .page-heading {
+  border-bottom: 1px solid $gray-lightest;
+  margin-bottom: 30px;
+}
+
+.page-wrapper .page-heading h1.heading-title {
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+ol.breadcrumb {
+  background: none;
+
+  li a {
+    color: $gray-darkest;
+    font-family: $font-sans;
+
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.table.itemDisplayTable {
+  background: $white;
+
+  tr > td:first-child {
+    font-weight: bold;
+  }
+}
+
+.panel.well {
+  background: $white;
+}
+
+.page-wrapper .breadcrumbs {
+  display: inline-block;
+}
+
+.page-wrapper .breadcrumbs ol {
+  margin: 0;
+  padding-top: 25px;
+}
+
+.page-wrapper .breadcrumbs ol li {
+  color: $blue-dark;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  list-style: none;
+}
+
+.page-wrapper .breadcrumbs ol li a {
+  color: $gray-light;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.page-wrapper .breadcrumbs ol li a:hover {
+  color: $blue-light;
+}
+
+.page-wrapper .breadcrumbs ol li.breadcrumbs-label {
+  color: $gray-light;
+  padding-right: 0;
+}
+
+.page-wrapper .breadcrumbs ol li.current {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-wrapper .breadcrumbs ol li .fa {
+  color: $gray-light;
+  margin-right: 5px;
+}
+
+.page-wrapper ul li {
+  margin-bottom: 5px;
+}
+
+.page-wrapper ul li .fa {
+  color: $blue-dark;
+  margin-right: 5px;
+}
+
+.page-wrapper ul li.list-group-item {
+  margin-bottom: -1px;
+}
+
+.page-wrapper ul.nav li {
+  margin-bottom: 0;
+}
+
+.page-wrapper ul.social-icons li .fa {
+  color: $white;
+  margin-right: 0;
+}
+
+.page-wrapper ol li {
+  margin-bottom: 5px;
+}
+
+.page-wrapper dl dd {
+  margin-bottom: 5px;
+}
+
+.well {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.community-list {
+  list-style: none;
+  padding-left: 0;
+
+  .media.well {
+    background: $white;
+
+    .media.well {
+      margin: 0;
+      padding: 10px;
+
+      &:first-child {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  background: $gray-darkest;
+
+  li a {
+    height: 50px;
+  }
+
+  > li.active {
+    border-color: $princeton-orange;
+  }
+
+  > li > a {
+    background: $gray-darkest;
+    border: 0;
+    color: $white;
+  }
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: 0;
+}
+
+.list-group-item:last-child,
+.list-group-item:first-child {
+  border-radius: 0;
+}
+
+.list-group-item-heading {
+  margin: 0;
+}
+
+.collectionDescription {
+  margin: 0;
+}
+
+.panel .pager {
+  margin: 0;
+}
+
+.tab-content {
+  border: 0;
+  margin-bottom: 0;
+
+  .panel-footer .pager {
+    margin: 0;
+  }
+}
+
+.browse-navigation .label {
+  font-size: 100%;
+}
+
+.browse-search {
+  margin: 2.25em 0 1.5em 0;
+}
+
+.font-sans {
+  font-family: $font-sans;
+  font-size: 14px;
+  margin-right: 1em;
+}
+
+.page-wrapper .page-content h1 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.page-wrapper .page-content h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.page-wrapper .page-content h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.page-wrapper .page-content h4 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.page-wrapper .page-content h5 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.page-wrapper .page-content h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.page-wrapper .page-content .title {
+  font-weight: 300;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.page-wrapper .page-content .page-row {
+  margin-bottom: 30px;
+}
+
+.page-wrapper .page-content .custom-quote {
+  border-color: $blue-light;
+}
+
+.page-wrapper .page-content .custom-quote p {
+  color: $gray;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.page-wrapper .page-content .custom-quote .fa {
+  color: $blue-dark;
+  margin-right: 10px;
+}
+
+.page-wrapper .page-content .custom-quote .people {
+  color: $gray-dark;
+  font-size: 11px;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.page-wrapper .page-content .custom-quote .people .name {
+  color: $blue-dark;
+}
+
+.page-wrapper .page-content .has-divider {
+  border-bottom: 1px dotted $gray-lightest;
+  padding-bottom: 15px;
+}
+
+.page-wrapper .page-content .has-divider-solid {
+  border-bottom: 1px solid $gray-lightest;
+}
+
+.page-wrapper .page-content .row-divider {
+  border-bottom: 1px dotted $gray-lightest;
+  padding: 10px 0;
+}
+
+.page-wrapper .page-content .even-row {
+  background: $gray-lightest;
+}
+
+.page-wrapper .page-content .read-more.btn {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.page-wrapper .page-content .panel-title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.page-wrapper .page-content .recent-iframe {
+  max-width: 100%;
+}
+
+.page-wrapper .page-content .album-cover {
+  border: 1px solid $gray-lightest;
+  margin-bottom: 30px;
+}
+
+.page-wrapper .page-content .album-cover:hover {
+  box-shadow: 0px 0px 5px 0px $gray-lightest;
+}
+
+.page-wrapper .page-content .album-cover > a:hover {
+  position: relative;
+}
+
+.page-wrapper .page-content .album-cover > a:hover img {
+  display: block;
+  opacity: 0.9;
+}
+
+.page-wrapper .page-content .album-cover .desc {
+  padding: 15px;
+  position: relative;
+}
+
+.page-wrapper .page-content .album-cover .desc:before {
+  border-bottom: 10px solid $white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+}
+
+.page-wrapper .page-content .prettyphoto:hover img {
+  box-shadow: 0px 0px 5px 0px $gray-lightest;
+}
+
+.page-wrapper .page-sidebar h3.title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.page-wrapper .page-sidebar .widget {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.page-wrapper .page-sidebar .widget.has-divider {
+  border-bottom: 1px dotted $gray-lightest;
+}
+
+.page-wrapper .page-sidebar .widget .iframe {
+  height: auto;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+.page-wrapper .page-sidebar .widget .fa {
+  color: $blue-dark;
+  margin-right: 5px;
+}
+
+.page-wrapper .page-sidebar .widget .fa.fa-phone {
+  font-size: 16px;
+}
+
+.page-wrapper .page-sidebar .widget .btn .fa {
+  color: $white;
+}
+
+.page-wrapper .page-sidebar .widget .nav li a {
+  border-left: 5px solid transparent;
+  color: $gray-dark;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+}
+
+.page-wrapper .page-sidebar .widget .nav li a:hover {
+  background: none;
+  color: $blue-dark;
+}
+
+.page-wrapper .page-sidebar .widget .nav li.active a {
+  background: none;
+  border-left: 5px solid $blue-dark;
+  color: $blue-dark;
+  font-weight: bold;
+}
+
+.page-wrapper .page-sidebar ul {
+  padding-left: 0;
+}
+
+.page-wrapper .page-sidebar .flickr-photos li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.page-wrapper .page-sidebar .flickr-photos li img {
+  max-width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-wrapper .page-sidebar .flickr-photos li img:hover {
+  opacity: 0.8;
+}
+
+.page-wrapper .page-sidebar .news-item {
+  margin-bottom: 15px;
+}
+
+.page-wrapper .page-sidebar .news-item img {
+  height: 40px;
+  width: 40px;
+}
+
+.page-wrapper .page-sidebar .news-item .title {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel {
+  position: relative;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .fa {
+  color: $blue-dark;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .carousel .item {
+  min-height: 300px;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .people {
+  margin-top: 10px;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .people .name {
+  color: $blue-dark;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .people .title {
+  color: $gray;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a .fa {
+  background: $gray-light;
+  color: $white;
+  display: inline-block;
+  font-size: 15px;
+  height: 20px;
+  margin-right: 0;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  width: 20px;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a.next .fa {
+  padding-right: 1px;
+  padding-top: 2px;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a.prev .fa {
+  padding-right: 1px;
+  padding-top: 2px;
+}
+
+.page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a:hover .fa {
+  background: $blue-dark;
+}

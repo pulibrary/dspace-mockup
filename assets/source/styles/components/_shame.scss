@@ -68,52 +68,52 @@ input.ds-authority-lock.is-unlocked
 .prev-next-links { text-align: center; }
 
 div.tagcloud {
-	width:100%;
-	text-align:center
+  width:100%;
+  text-align:center
 }
 
 div.tagcloud .tagcloud_1{
-	color: rgb(217, 108, 39);
-	font-weight: normal;
-	margin-right: 5px;
+  color: rgb(217, 108, 39);
+  font-weight: normal;
+  margin-right: 5px;
 }
 
 div.tagcloud .tagcloud_2{
-	color: rgb(66, 66, 66);
-	font-weight: normal;
-	margin-right: 5px;
+  color: rgb(66, 66, 66);
+  font-weight: normal;
+  margin-right: 5px;
 }
 
 div.tagcloud .tagcloud_3{
-	color: rgb(129, 129, 131);
-	font-weight: normal;
-	margin-right: 5px;
+  color: rgb(129, 129, 131);
+  font-weight: normal;
+  margin-right: 5px;
 }
 
 div.batchimport-info {
-	color: gray;
+  color: gray;
 }
 
 div.batchimport-info  a {
-	color:#47a447;
-	font-weight: bold;
+  color:#47a447;
+  font-weight: bold;
 }
 
 span.batchimport-error-tab {
-	padding-left:10px;
+  padding-left:10px;
 }
 
 span.batchimport-error-caused {
-	font-weight:bold;
+  font-weight:bold;
 }
 
 
 .statisticsLink {
-	display: none;
+  display: none;
 }
 
 .loggedin .statisticsLink {
-	display: inline;
+  display: inline;
 }
 
 /* change this to none in production */
@@ -127,7 +127,7 @@ div.debug {
 
 
 .navbar-brand {
-	height: 25px;
+  height: 25px;
  }
 
 .navbar-dspace {
@@ -156,10 +156,10 @@ div.debug {
   padding-right: 0px;
 }
 
-/*.sidebar > div {
-  padding-right: 15px;
-  padding-left: 15px;
-}*/
+// .sidebar > div {
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
 
 .search-buttons {
   margin-bottom: 20px;
@@ -213,8 +213,8 @@ div.debug {
 .hdl-88435-dsp019c67wm88m .itemDisplayTable .pu-location .metadataFieldValue,
 .hdl-88435-dsp019c67wm88m .itemDisplayTable .dc-rights-accessRights .metadataFieldValue,
 .hdl-88435-dsp01td96k251d .itemDisplayTable .dc-relation-isformatof .metadataFieldValue {
-    background-color: #f5f5f5;
-    background-image: linear-gradient(to bottom, #e8e8e8 0px, #f5f5f5 100%);
+    background-color: $gray-lightest;
+    background-image: linear-gradient(to bottom, #e8e8e8 0px, $gray-lightest 100%);
     background-repeat: repeat-x;
 }
 

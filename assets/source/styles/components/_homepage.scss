@@ -1,0 +1,294 @@
+/* ======= Home Page ======= */
+.home-page h1.section-heading {
+  color: $blue-dark;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 2;
+  margin-top: 0;
+}
+
+.home-page h1.section-heading .line {
+  /*border-top: 2px solid $blue-light;*/
+  display: inline-block;
+  padding: 0 15px;
+  padding-top: 5px;
+}
+
+.home-page section {
+  background: $white;
+  // border: 1px solid $gray-lighter;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.home-page .section-content {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.home-page .carousel-controls a .fa {
+  background: $gray-light;
+  color: $white;
+  display: inline-block;
+  font-size: 15px;
+  height: 20px;
+  margin-right: 0;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  width: 20px;
+}
+
+.home-page .carousel-controls a.next .fa {
+  padding-right: 1px;
+  padding-top: 2px;
+}
+
+.home-page .carousel-controls a.prev .fa {
+  padding-right: 1px;
+  padding-top: 2px;
+}
+
+.home-page .carousel-controls a:hover .fa {
+  background: $blue-light;
+}
+
+.home-page .promo {
+  margin-bottom: 30px;
+}
+
+.home-page .promo h1.section-heading {
+  color: $white;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.home-page .promo p {
+  color: $gray-lightest;
+}
+
+.home-page .promo .btn-cta {
+  font-family: $font-sans;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.home-page .blocks {
+  height: 165px;
+
+  h1 {
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    font-size: 5.5em;
+    margin: 0 auto;
+    text-align: center;
+
+    &:hover {
+      color: $princeton-orange;
+    }
+  }
+}
+
+.home-page .news {
+  position: relative;
+}
+
+.home-page .news .carousel-controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.home-page .news h2.title {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.home-page .news h2.title a {
+  color: $gray-darker2;
+}
+
+.home-page .news h2.title a:hover {
+  color: $blue-light;
+}
+
+.home-page .news .news-item {
+  margin-bottom: 20px;
+  padding-left: 115px;
+  position: relative;
+}
+
+.home-page .news .thumb {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.home-page .events .section-content {
+  // min-height: 520px;
+}
+
+.home-page .events .event-item {
+  border-bottom: 1px solid $white;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  position: relative;
+}
+
+.home-page .events .event-item .date-label {
+  background: $white;
+  border: 1px solid $gray-lightest;
+  left: 0;
+  position: absolute;
+}
+
+.home-page .events .event-item h2.title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.home-page .events .event-item p {
+  margin-bottom: 5px;
+}
+
+.home-page .events .event-item .fa {
+  color: $gray;
+  font-size: 14px;
+  margin-right: 5px;
+  min-width: 16px;
+}
+
+.home-page .events .event-item .fa.fa-map-marker {
+  font-size: 18px;
+}
+
+.home-page .events .read-more {
+  margin-top: 15px;
+}
+
+.home-page .events .details p {
+  color: $gray;
+}
+
+.home-page .course-finder .course-finder-form {
+  margin-bottom: 15px;
+}
+
+.home-page .course-finder .keywords {
+  padding-left: 0;
+}
+
+.home-page .course-finder .keywords input {
+  margin-right: 5px;
+  width: 200px;
+}
+
+.home-page .recent {
+  height: 361px;
+  position: relative;
+
+  h2,
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.home-page .advanced-search {
+  color: $white;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.home-page .recent .carousel-controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.home-page .recent .recent-iframe {
+  height: 287px;
+  margin-bottom: 5px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.home-page .links .fa {
+  margin-right: 5px;
+}
+
+.home-page .testimonials {
+  position: relative;
+}
+
+.home-page .testimonials .carousel-controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.home-page .testimonials .fa {
+  color: $blue-light;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.home-page .testimonials .carousel .item {
+  min-height: 298px;
+}
+
+.home-page .testimonials .people {
+  margin-top: 10px;
+}
+
+.home-page .testimonials .people .name {
+  color: $blue-light;
+}
+
+.home-page .testimonials .people .title {
+  color: $gray-lighter;
+}
+
+.home-page .awards {
+  background: $white;
+}
+
+.home-page .awards .logos {
+  margin: 0;
+  padding: 0;
+}
+
+.home-page .awards .logos li {
+  list-style: none;
+  margin-right: 0;
+  text-align: center;
+}
+
+.home-page .awards .logos li img {
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+.home-page .awards .logos li img:hover {
+  opacity: 1;
+}
+
+.home-page .awards .carousel-control {
+  background: none;
+  filter: alpha(opacity = 100);
+  opacity: 1;
+  text-shadow: none;
+  top: 20px;
+  transition: all 0.4s ease-in-out;
+  width: auto;
+}
+
+.home-page .awards .carousel-control .fa {
+  color: $white;
+  font-weight: bold;
+}
+
+.home-page .awards .carousel-control:hover .fa {
+  color: $gray-lighter;
+}

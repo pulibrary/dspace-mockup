@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSpace | Princeton University Library</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- PUL DSpace Theme -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/public/styles/dspace-theme.min.css" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="home-page">
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    <div class="wrapper">
+        <header>
+            <div class="branding">
+                <div class="container">
+                    <div class="col-md-6 col-sm-12">
+                        <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
+                        <img src="assets/public/images/logo.png" alt="Princeton University Library">
+                        <span class="site-name sr-only">Princeton University Library</span>
+            </a></h2>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-default navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation-bar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">DSpace</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navigation-bar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span> Browse <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Communities &amp; Collections</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Browse items by:</li>
+                                    <li><a href="#">Title</a></li>
+                                    <li><a href="#">Author</a></li>
+                                    <li><a href="#">Subject</a></li>
+                                    <li><a href="#">Issue Date</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My DataSpace</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content container" id="main-content">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Search</h2>
+                    <div class="discovery-search-form panel">
+                        <div class="discovery-query panel-heading">
+                            <form action="simple-search" method="get" name="search">
+                                <!--                                 <input type="hidden" value="t" name="expanded">
+ -->
+                                <!-- <div class="ds-form-item row"> -->
+                                <div class="col-sm-3">
+                                    <!-- <p> -->
+                                    <select class="form-control" name="location" id="tlocation">
+                                        <option selected="selected" value="/">All of DataSpace</option>
+                                        <option value="88435/dsp01k643b120w">
+                                            Astrophysical Sciences</option>
+                                        <option value="88435/dsp01bg257f052">
+                                            Civil and Environmental Engineering</option>
+                                        <option value="88435/dsp012b88qf40b">
+                                            Department of Geosciences</option>
+                                        <option value="88435/dsp011z40ks889">
+                                            Department of Slavic Languages and Literatures</option>
+                                        <option value="88435/dsp01th83kz360">
+                                            Education Research Section</option>
+                                        <option value="88435/dsp01st74cq47h">
+                                            Faculty Publications</option>
+                                        <option value="88435/dsp01c821gj770">
+                                            Industrial Relations Section</option>
+                                        <option value="88435/dsp01m326m175b">
+                                            Liechtenstein Institute on Self-Determination</option>
+                                        <option value="88435/dsp014q77fr339">
+                                            Office of Information Technology</option>
+                                        <option value="88435/dsp0147429c369">
+                                            Princeton Neuroscience Institute</option>
+                                        <option value="88435/dsp01pz50gz45g">
+                                            Princeton Plasma Physics Laboratory</option>
+                                        <option value="88435/dsp01td96k251d">
+                                            Princeton University Doctoral Dissertations, 2011-2015</option>
+                                        <option value="88435/dsp01g732d9019">
+                                            Princeton University Library</option>
+                                        <option value="88435/dsp019c67wm88m">
+                                            Princeton University Senior Theses, 1924-2015</option>
+                                        <option value="88435/dsp01h989r3236">
+                                            Seeger Center for Hellenic Studies</option>
+                                        <option value="88435/dsp01g445cd134">
+                                            Woodrow Wilson School of Public and International Affairs</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="input-group">
+                                        <label for="query" class="sr-only">Search</label>
+                                        <input class="form-control" type="text" id="query" name="query" value="">
+                                        <span class="input-group-btn"><input type="submit" id="main-query-submit" class="btn btn-orange" value="Search"></span>
+                                    </p>
+                                </div>
+                                <input type="hidden" value="10" name="rpp">
+                                <input type="hidden" value="score" name="sort_by">
+                                <input type="hidden" value="desc" name="order">
+                                <div class="discovery-search-filters panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4>Add filters:</h4>
+                                            <p class="discovery-search-filters-hint">Use filters to refine the search results.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <form action="simple-search" method="get" name="search1">
+                                            <input type="hidden" value="t" name="expanded">
+                                            <input type="hidden" value="" name="location">
+                                            <input type="hidden" value="" name="query">
+                                            <div class="col-sm-3">
+                                                <select class="form-control" id="filtername" name="filtername">
+                                                    <option value="title">Title</option>
+                                                    <option value="author">Author</option>
+                                                    <option value="subject">Subject</option>
+                                                    <option value="dateIssued">Date Issued</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <select class="form-control" id="filtertype" name="filtertype">
+                                                    <option value="equals">Equals</option>
+                                                    <option value="contains">Contains</option>
+                                                    <option value="authority">ID</option>
+                                                    <option value="notequals">Not Equals</option>
+                                                    <option value="notcontains">Not Contains</option>
+                                                    <option value="notauthority">Not ID</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="input-group">
+                                                    <input class="form-control ui-autocomplete-input" type="text" id="filterquery" name="filterquery" autocomplete="off">
+                                                    <span class="input-group-btn">
+                                  <input type="submit" class="btn btn-default" value="Add" onclick="return validateFilters()">
+                                </span>
+                                                </p>
+                                            </div>
+                                            <input type="hidden" value="10" name="rpp">
+                                            <input type="hidden" value="score" name="sort_by">
+                                            <input type="hidden" value="desc" name="order">
+                                        </form>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="discovery-pagination-controls panel">
+                                <form action="simple-search" method="get">
+                                    <input type="hidden" value="" name="location">
+                                    <input type="hidden" value="" name="query">
+                                    <label for="rpp">Results/Page</label>
+                                    <select name="rpp">
+                                        <option value="5">5</option>
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                        <option value="60">60</option>
+                                        <option value="65">65</option>
+                                        <option value="70">70</option>
+                                        <option value="75">75</option>
+                                        <option value="80">80</option>
+                                        <option value="85">85</option>
+                                        <option value="90">90</option>
+                                        <option value="95">95</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                    <label for="sort_by">Sort items by</label>
+                                    <select name="sort_by">
+                                        <option value="score">Relevance</option>
+                                        <option value="dc.title_sort">Title</option>
+                                        <option value="dc.date.issued_dt">Issue Date</option>
+                                    </select>
+                                    <label for="order">In order</label>
+                                    <select name="order">
+                                        <option value="ASC">Ascending</option>
+                                        <option value="DESC" selected="selected">Descending</option>
+                                    </select>
+                                    <label for="etal">Authors/record</label>
+                                    <select name="etal">
+                                        <option value="0" selected="selected">All</option>
+                                        <option value="1">1</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                    <input class="btn btn-default" type="submit" name="submit_search" value="Update">
+                                </form>
+                            </div>
+                            <!-- give a content to the div -->
+                        </div>
+                    </div>
+                    <div class="discovery-result-results">
+                        <div class="panel">
+                            <div class="panel-heading">Item hits: <span class="discovery-result-pagination">Results 1-10 of 70257</span>
+                            </div>
+                            <table align="center" class="table" summary="This table browses all dspace content">
+                                <tbody>
+                                    <tr>
+                                        <th id="t1" class="oddRowEvenCol">Issue Date</th>
+                                        <th id="t2" class="oddRowOddCol">Title</th>
+                                        <th id="t3" class="oddRowEvenCol">Author(s)</th>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">15-Sep-2011</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp01h128nd697">Cap rock fracturing criteria for assessment of CO2 storage capacity</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Cuisiat, Fabrice</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">13-Apr-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp01bc386j227">The Demand for Health Insurance among Uninsured Americans: Results of a Survey Experiment and Implications for Policy</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Krueger, Alan B.; Kuziemko, Ilyana</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">20-Jan-2012</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp018s45q878b">njteach</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Rouse, Cecilia</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">11-Jul-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp012v23vt39h">Why do Plaintiffs Lose Appeals? Biased Trial Courts, Litigious Losers, or Low Trial Win Rates?</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Eisenberg, Theodore; Farber, Henry S.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">14-Dec-2011</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp01zg64tk94k">Minimum Wages and Employment: Tseries</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Krueger, Alan B.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">14-Dec-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp0170795766s">Minimum Wages and Employment: Chapter 4</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Krueger, Alan B.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">14-Dec-2011</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp0137720c74j">Minimum Wages and Employment: Texas</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Krueger, Alan B.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1-Nov-1974</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp01h989r322j">Wage Determination in the Public Sector</a></td>
+                                        <td headers="t3" class="oddRowEvenCol">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">20-Jan-2012</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp015138jd87v">Returns</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Rouse, Cecilia</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">21-Dec-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp012801pg35n">Dataset for 1994 Ashenfelter/Krueger Twins Paper</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Krueger, Alan B.; Ashenfelter, Orley</em></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="discovery-result-pagination">
+                        <ul class="pagination pull-right">
+                            <li class="disabled"><span>previous</span></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">2</a></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=20">3</a></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=30">4</a></li>
+                            <li class="disabled"><span>...</span></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=70250">7026</a></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">next</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <h3 class="facets">Discover</h3>
+                        <div id="facets" class="facetsBox">
+                            <div id="facet_author" class="panel">
+                                <div class="panel-heading">Author</div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="badge">608</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=O%27Rourke%2C+Kevin&amp;filtertype=equals" title="Filter by O'Rourke, Kevin">
+                            O'Rourke, Kevin</a></li>
+                                    <li class="list-group-item"><span class="badge">104</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Krueger%2C+Alan+B.&amp;filtertype=equals" title="Filter by Krueger, Alan B.">
+                            Krueger, Alan B.</a></li>
+                                    <li class="list-group-item"><span class="badge">77</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Ashenfelter%2C+Orley&amp;filtertype=equals" title="Filter by Ashenfelter, Orley">
+                            Ashenfelter, Orley</a></li>
+                                    <li class="list-group-item"><span class="badge">63</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Card%2C+David&amp;filtertype=equals" title="Filter by Card, David">
+                            Card, David</a></li>
+                                    <li class="list-group-item"><span class="badge">52</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Farber%2C+Henry+S.&amp;filtertype=equals" title="Filter by Farber, Henry S.">
+                            Farber, Henry S.</a></li>
+                                    <li class="list-group-item"><span class="badge">38</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Mercer%2C+Alan&amp;filtertype=equals" title="Filter by Mercer, Alan">
+                            Mercer, Alan</a></li>
+                                    <li class="list-group-item"><span class="badge">28</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Liechtenstein+Institute+on+Self-Determination&amp;filtertype=equals" title="Filter by Liechtenstein Institute on Self-Determination">
+                            Liechtenstein Institute on Self-D...</a></li>
+                                    <li class="list-group-item"><span class="badge">24</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Rouse%2C+Cecilia&amp;filtertype=equals" title="Filter by Rouse, Cecilia">
+                            Rouse, Cecilia</a></li>
+                                    <li class="list-group-item"><span class="badge">19</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Rothstein%2C+Jesse&amp;filtertype=equals" title="Filter by Rothstein, Jesse">
+                            Rothstein, Jesse</a></li>
+                                    <li class="list-group-item"><span class="badge">15</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=author&amp;filterquery=Rajeev%2C+Meenakshi&amp;filtertype=equals" title="Filter by Rajeev, Meenakshi">
+                            Rajeev, Meenakshi</a></li>
+                                    <li class="list-group-item"><span style="visibility: hidden;">.</span>
+                                        <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;author_page=1"><span class="pull-right">next &gt;</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="facet_subject" class="panel">
+                                <div class="panel-heading">Subject</div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="badge">1722</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Youth--Russia--Periodicals&amp;filtertype=equals" title="Filter by Youth--Russia--Periodicals">
+                            Youth--Russia--Periodicals</a></li>
+                                    <li class="list-group-item"><span class="badge">1722</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Youth--Soviet+Union--Periodicals&amp;filtertype=equals" title="Filter by Youth--Soviet Union--Periodicals">
+                            Youth--Soviet Union--Periodicals</a></li>
+                                    <li class="list-group-item"><span class="badge">656</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Hungary&amp;filtertype=equals" title="Filter by Hungary">
+                            Hungary</a></li>
+                                    <li class="list-group-item"><span class="badge">615</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Politics&amp;filtertype=equals" title="Filter by Politics">
+                            Politics</a></li>
+                                    <li class="list-group-item"><span class="badge">611</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Policies&amp;filtertype=equals" title="Filter by Policies">
+                            Policies</a></li>
+                                    <li class="list-group-item"><span class="badge">610</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Indonesia&amp;filtertype=equals" title="Filter by Indonesia">
+                            Indonesia</a></li>
+                                    <li class="list-group-item"><span class="badge">326</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Municipal+finance+--+periodicals&amp;filtertype=equals" title="Filter by Municipal finance -- periodicals">
+                            Municipal finance -- periodicals</a></li>
+                                    <li class="list-group-item"><span class="badge">163</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Pakistan&amp;filtertype=equals" title="Filter by Pakistan">
+                            Pakistan</a></li>
+                                    <li class="list-group-item"><span class="badge">89</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Economics&amp;filtertype=equals" title="Filter by Economics">
+                            Economics</a></li>
+                                    <li class="list-group-item"><span class="badge">88</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=subject&amp;filterquery=Electrical+engineering&amp;filtertype=equals" title="Filter by Electrical engineering">
+                            Electrical engineering</a></li>
+                                    <li class="list-group-item"><span style="visibility: hidden;">.</span>
+                                        <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;subject_page=1"><span class="pull-right">next &gt;</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="facet_dateIssued" class="panel">
+                                <div class="panel-heading">Date issued</div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="badge">1</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B3000+TO+3008%5D&amp;filtertype=equals" title="Filter by 3000 - 3008">
+                            3000 - 3008</a></li>
+                                    <li class="list-group-item"><span class="badge">22935</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B2000+TO+2999%5D&amp;filtertype=equals" title="Filter by 2000 - 2999">
+                            2000 - 2999</a></li>
+                                    <li class="list-group-item"><span class="badge">47107</span> <a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B1080+TO+1999%5D&amp;filtertype=equals" title="Filter by 1080 - 1999">
+                            1080 - 1999</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="pull-right copyright col-md-6 col-sm-12 col-xs-12"><a href="#">Princeton University</a> &copy; 2016 The Trustees of Princeton University. All rights reserved.</small>
+                    <ul class="pull-left col-md-6 col-sm-12 col-xs-12">
+                        <li><a href="#">Princeton University Library</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//bottom-bar-->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/public/scripts/dspace.scripts.min.js"></script>
+</body>
+
+</html>
+

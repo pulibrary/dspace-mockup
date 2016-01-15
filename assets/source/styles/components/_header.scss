@@ -1,0 +1,101 @@
+@import "utils/variables";
+
+// branding
+
+body {
+  padding: 0px;
+}
+
+.branding {
+  background: $gray-darkest;
+  border-top: 5px solid $princeton-orange;
+  min-height: 40px;
+
+  .col-md-6 {
+    padding: 0;
+  }
+
+  h2 {
+    height: 40px;
+    margin: 0;
+    position: relative;
+  }
+}
+
+// non-SVG logo
+.site-logo {
+  clear: both;
+  height: 40px;
+  line-height: 21px;
+  margin-left: -0.7em;
+
+  @include breakpoint($tab) {
+    // @include span(6 of 12);
+  }
+
+
+  &:before { /* create a full-height inline block pseudo=element */
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; /* vertical alignment of the inline element */
+  }
+
+  img {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 1em;
+    vertical-align: middle;
+
+    @include breakpoint($desk) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+// SVG logo
+.svg {
+  .site-logo img {
+    display: none;
+  }
+
+  .site-logo {
+    @include vertical-align;
+
+    background: url("../images/logo.svg") center center no-repeat;
+    background-size: contain;
+    display: block;
+    margin-left: 0;
+    max-height: 25px;
+
+    @include breakpoint($tab) {
+      background: url("../images/logo.svg") center left no-repeat;
+      background-size: contain;
+    }
+
+
+    @include breakpoint($bp-large) {
+      max-height: 25px;
+    }
+  }
+}
+
+// navigation
+
+.navbar-default {
+  background: $white;
+}
+
+.navbar-collapse {
+  max-height: 270px;
+  padding-top: 30px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    padding-right: 38px;
+    padding-top: 0px;
+  }
+}
