@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Access Waiver | Princeton University Library</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- PUL DSpace Theme -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/public/styles/dspace-theme.min.css" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="waiver anonymous application application_start rails_qa">
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    <div class="wrapper">
+        <header>
+            <div class="branding">
+                <div class="container">
+                    <div class="col-md-6 col-sm-12">
+                        <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
+                    <img src="assets/public/images/logo.png" alt="Princeton University Library">
+                    <span class="site-name sr-only">Princeton University Library</span>
+        </a></h2>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-default navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation-bar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Open Access Waivers</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navigation-bar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Request a Waiver</a></li>
+                            <li><a href="#">Review Requests</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">All Waivers</a></li>
+                                    <li><a href="#">Search Waivers</a></li>
+                                    <li><a href="#">Manage</a></li>
+                                    <li><a href="#">Authors</a></li>
+                                    <li><a href="#">Issue Date</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login / Logoff</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content container inner body" id="main-content">
+            <section class="panel">
+                <div class="section-content open-access callout-info">
+                    <p>
+                        The <a href="http://www.princeton.edu/dof/policies/publ/fac/open-access-policy/">
+        Open Access Policy</a> approved by faculty in September of 2011 grants Princeton University a license to all journal articles and conference proceedings authored by Princeton faculty members with the intent of making the content freely accessible to the public. The policy does not apply to students or staff.
+                    </p>
+                    <p> If you wish to prevent an article from being made publicly accessible, then you must request a waiver for that article.
+                    </p>
+                </div>
+            </section>
+            <h1> Request A Waiver </h1>
+            <section class="panel">
+                <div class="help-block"><span class="required">*</span> indicates required field</div>
+                <form accept-charset="UTF-8" action="/waiver/create" class="new_waiver_info  section-content" id="waiver_info_form" method="post">
+                    <fieldset>
+                        <legend>Author</legend>
+                        <p class="help-block">Please enter the faculty author's first or last name in the search box below and choose from the drop down list that appears.</p>
+                        <p class="help-block">If the author does not appear in the drop down list,
+                            <button class="btn btn-link" id="author_free_entry_click" onclick="author_free_entry_form()" type="button"> enter author details</button>.</p>
+                        <div class="form-group required">
+                            <label for="author_data">Author</label>
+                            <input class="form-control ui-autocomplete-input" id="author_data" placeholder="Search for Author">
+                        </div>
+                        <div class="field hidden">
+                            <input class="author_status" name="waiver_info[author_status]" type="hidden" value="faculty">
+                            <input class="first_name" name="waiver_info[author_first_name]" type="hidden" value="">
+                            <input class="last_name" name="waiver_info[author_last_name]" type="hidden" value="">
+                            <input class="preferred_name" name="waiver_info[author_preferred_name]" type="hidden" value="">
+                            <input class="email" name="waiver_info[author_email]" type="hidden" value="">
+                            <input class="unique_id" name="waiver_info[author_unique_id]" type="hidden" value="">
+                            <input class="department" name="waiver_info[author_department]" type="hidden" value="">
+                        </div>
+                        <div class="form-group">
+                            <h4>Author Details</h4>
+                            <dl>
+                                <dt>First Name:</dt>
+                                <dd class="first_name">First name goes here</dd>
+                                <dt>Last Name:</dt>
+                                <dd class="last_name">Last name goes here</dd>
+                                <dt>E-mail:</dt>
+                                <dd class="email">E-mail goes here</dd>
+                                <dt>Department:</dt>
+                                <dd class="department">Department goes here</dd>
+                            </dl>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Article</legend>
+                        <div class="form-group required">
+                            <label for="waiver_info_title">Title</label>
+                            <input class="form-control" name="waiver_info[title]" id="waiver_info_title" placeholder="The title of article (expected or working title)">
+                        </div>
+                        <div class="form-group required">
+                            <label for="waiver_info_journal">Journal</label>
+                            <input class="form-control" name="waiver_info[journal]" id="waiver_info_journal" placeholder="The full name of the journal in which you expect to publish this article"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="waiver_info_notes">Notes</label>
+                            <textarea class="form-control" rows="3" id="waiver_info_notes" name="waiver_info[notes]"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>E-mail Recipient</legend>
+                        <p class="help-block">We will send a confirmation email with the waiver to you as well as the author. You may add additional email recipients in the field below; please separate email addresses with commas.</p>
+                        <div class="form-group required">
+                            <label for="waiver_info_cc_email">E-mail</label>
+                            <input class="form-control" type="email" name="waiver_info[cc_email]" id="waiver_info_cc_email" placeholder="Email address where waiver should be sent"></input>
+                        </div>
+                    </fieldset>
+                    <div class="actions">
+                        <input name="CANCEL" type="submit" value="Cancel" class="btn" />
+                        <input name="CONFIRM-WAIVER" type="submit" value="Confirm" class="btn btn-orange" />
+                    </div>
+                </form>
+                <div id="templates" class="hidden">
+                    <form accept-charset="UTF-8" action="/admin/waivers" class="new_waiver_info section-content" id="new_waiver_info" method="post">
+                        <div style="display:none">
+                            <input name="utf8" type="hidden" value="&#x2713;" />
+                            <input name="authenticity_token" type="hidden" value="Ry364hV2hTerk1RCWzDGgibaDoAdW+1WSXJJQU8N4VA=" />
+                        </div>
+                        <fieldset>
+                            <legend>Author</legend>
+                            <p class="help-block">Please enter the faculty author's first or last name in the search box below and choose from the drop down list that appears.</p>
+                            <p class="help-block">If the author does not appear in the drop down list,
+                                <button class="btn btn-link" id="author_free_entry_click" onclick="author_free_entry_form()" type="button"> enter author details</button>.</p>
+                            <div class="form-group required">
+                                <label for="author_data">Author</label>
+                                <input class="form-control ui-autocomplete-input" id="author_data" placeholder="Search for Author">
+                            </div>
+                            <div class="field hidden">
+                                <input class="author_status" name="waiver_info[author_status]" type="hidden" value="faculty">
+                                <input class="first_name" name="waiver_info[author_first_name]" type="hidden" value="">
+                                <input class="last_name" name="waiver_info[author_last_name]" type="hidden" value="">
+                                <input class="preferred_name" name="waiver_info[author_preferred_name]" type="hidden" value="">
+                                <input class="email" name="waiver_info[author_email]" type="hidden" value="">
+                                <input class="unique_id" name="waiver_info[author_unique_id]" type="hidden" value="">
+                                <input class="department" name="waiver_info[author_department]" type="hidden" value="">
+                            </div>
+                            <div class="form-group">
+                                <h4>Author Details</h4>
+                                <dl>
+                                    <dt>First Name:</dt>
+                                    <dd class="first_name">First name goes here</dd>
+                                    <dt>Last Name:</dt>
+                                    <dd class="last_name">Last name goes here</dd>
+                                    <dt>E-mail:</dt>
+                                    <dd class="email">E-mail goes here</dd>
+                                    <dt>Department:</dt>
+                                    <dd class="department">Department goes here</dd>
+                                </dl>
+                            </div>
+                        </fieldset>
+                        <fieldset class="free_form_author_data">
+                            <legend>Author</legend>
+                            <p class="help-block">
+                                <button class="btn btn-link" id="author_ajax_click" onclick="author_ajax_form()" type="button">Search for faculty author</button>
+                            </p>
+                            <div class="form-group field required">
+                                <label for="waiver_info_author_first_name">First Name</label>
+                                <input class="form-control first_name" id="waiver_info_author_first_name" name="waiver_info[author_first_name]" type="text" placeholder="Author's first name" />
+                            </div>
+                            <div class="form-group field required">
+                                <label for="waiver_info_author_last_name">Last Name</label>
+                                <input class="form-control last_name" id="waiver_info_author_last_name" name="waiver_info[author_last_name]" type="text" placeholder="Author's last name" />
+                            </div>
+                            <div class="form-group field required">
+                                <label for="waiver_info_author_email">E-mail</label>
+                                <input class="form-control email" id="waiver_info_author_email" name="waiver_info[author_email]" type="text" placeholder="Author's e-mail address" />
+                            </div>
+                            <div class="form-group field required">
+                                <label for="waiver_info_author_department">Department</label>
+                                <input class="form-control department" id="waiver_info_author_department" name="waiver_info[author_department]" type="text" placeholder="Author's department" />
+                            </div>
+                            <input class="author_status" type="hidden" value="non faculty" name="waiver_info[author_status]">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="pull-right copyright col-md-6 col-sm-12 col-xs-12"><a href="#">Princeton University</a> &copy; 2016 The Trustees of Princeton University. All rights reserved.</small>
+                    <ul class="pull-left col-md-6 col-sm-12 col-xs-12">
+                        <li><a href="http://www.princeton.edu/dof/policies/publ/fac/open-access-policy"> Princeton O​pen Access Policy</a></li>
+                        <li><a href="http://library.princeton.edu/services/scholarly-communications">Scholarly Communications Office</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/public/scripts/dspace.scripts.min.js"></script>
+    <script src="assets/public/scripts/application.js"></script>
+    <script>
+    var ajax_author_form;
+    var free_author_form;
+
+    function author_ajax_form() {
+        $("#author_form_fields").children().last().replaceWith(ajax_author_form);
+    }
+
+    function author_free_entry_form() {
+        $("#author_form_fields").children().last().replaceWith(free_author_form);
+    }
+
+    function init_form(form_selector) {
+        active_form = $("#author_form_fields").children().last().replaceWith($("#templates " + form_selector));
+    }
+
+    function init_log() {
+        AjaxAutoCompleter.setup_ajax_form('#author_select_with_ajax', '#author_form_fields', "/api/employees/get_all/name.json", "search_term=MATCH");
+        ajax_author_form = $("#templates .ajax_author_data");
+        free_author_form = $("#templates .free_form_author_data");
+
+        $("#log").hide();
+
+
+        //uncomment to log actions in author_select_with_ajax form
+
+        // $("#log").show();
+        // AjaxAutoCompleter.prototype.log = function(e) {
+        //     try {
+        //         if (e.length > 160) {
+        //             e = e.substring(0, 160) + " ...";
+        //         }
+        //         if ($("#log").length > 0) {
+        //             $("#log").prepend(("AjaxAutoCompleter." + e) + "<br/>");
+        //         } else {
+        //             console.log(e);
+        //         }
+        //     } catch (er) {}
+        // }
+
+    }
+
+    // $(document).ready(init_log);
+    </script>
+    <script>
+    $(document).ready(author_ajax_form);
+    </script>
+</body>
+
+</html>
