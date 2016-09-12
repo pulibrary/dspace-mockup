@@ -40,7 +40,7 @@
   display: inline-block;
   float: left;
   font-size: 11px;
-  line-height: 3;
+  line-height: 1.4;
   padding: 0 1em;
 
   &:last-child {
@@ -111,7 +111,7 @@
 
 .footer .bottom-bar {
   background: $black;
-  padding: 5px 0;
+  padding: 15px 0 10px;
 }
 
 .footer .bottom-bar .copyright {
@@ -153,7 +153,7 @@ body {
 }
 
 .wrapper {
-  margin-bottom: -46px;
+  margin-bottom: -55px;
   min-height: 100%;
 
   /* equal to footer height */
@@ -162,13 +162,13 @@ body {
 .wrapper:after {
   content: "";
   display: block;
-  height: 46px;
+  height: 55px;
 
   /* must be the same height as footer */
 }
 
 .footer {
-  height: 46px;
+  height: 55px;
 
   /* must be the same height as footer */
 }
