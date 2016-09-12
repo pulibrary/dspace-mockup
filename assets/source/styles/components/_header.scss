@@ -28,11 +28,7 @@ body {
   height: 40px;
   line-height: 21px;
   margin-left: -0.7em;
-
-  @include breakpoint($tab) {
-    // @include span(6 of 12);
-  }
-
+  transition: none;
 
   &:before { /* create a full-height inline block pseudo=element */
     content: " ";
@@ -42,9 +38,13 @@ body {
   }
 
   img {
+    @include vertical-align;
+
     display: inline-block;
     margin: 0 auto;
+    max-height: 25px;
     padding: 0 1em;
+    position: absolute;
     vertical-align: middle;
 
     @include breakpoint($desk) {
@@ -66,14 +66,15 @@ body {
     background: url("../images/logo.svg") center center no-repeat;
     background-size: contain;
     display: block;
+    height: 25px;
     margin-left: 0;
-    max-height: 25px;
+    transition: none;
 
     @include breakpoint($tab) {
       background: url("../images/logo.svg") center left no-repeat;
       background-size: contain;
+      max-height: 25px;
     }
-
 
     @include breakpoint($bp-large) {
       max-height: 25px;
