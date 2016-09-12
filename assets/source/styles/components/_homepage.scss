@@ -92,8 +92,20 @@
 }
 
 .home-page .news {
-  position: relative;
   min-height: 165px;
+  position: relative;
+}
+
+.home-page .about p {
+  // color: $black;
+  background: $white;
+  float: right;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  @media (min-width: 1200px) {
+    width: 75%;
+  }
 }
 
 .home-page .news .carousel-controls {
@@ -205,7 +217,7 @@
 }
 
 .home-page .advanced-search {
-  color: $white;
+  color: $blue-dark;
   display: inline-block;
   margin-top: 10px;
 }
