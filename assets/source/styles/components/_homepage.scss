@@ -79,7 +79,7 @@
     text-align: center;
   }
 
-  a {
+  .glyphicon {
     display: block;
     font-size: 5.5em;
     margin: 0 auto;
@@ -87,6 +87,29 @@
 
     &:hover {
       color: $princeton-orange;
+    }
+  }
+}
+
+.home-page .featured-blocks a:hover {
+  text-decoration: none;
+
+  .glyphicon {
+    color: $princeton-orange;
+  }
+}
+
+.home-page .blocks ul {
+  font-size: 0.9em;
+  list-style-position: inside;
+  list-style-type: circle;
+  padding: 0;
+
+  li {
+    margin-bottom: 5px;
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -104,6 +127,8 @@
   padding: 20px;
 
   @media (min-width: 1200px) {
+    background: transparent;
+    color: $white;
     width: 75%;
   }
 }
@@ -217,7 +242,7 @@
 }
 
 .home-page .advanced-search {
-  color: $blue-dark;
+  color: $white;
   display: inline-block;
   margin-top: 10px;
 }
