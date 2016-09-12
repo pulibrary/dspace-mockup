@@ -1,12 +1,13 @@
 .search-block {
   // border: 1px solid $gray-dark;
   background: $white;
-  @media (min-width: 1200px){
-    height: 195px;
-  }
   margin-bottom: 30px;
   position: relative;
   width: 100%;
+
+  @media (min-width: 1200px) {
+    height: 195px;
+  }
 
   img {
     height: 195px;
@@ -25,11 +26,12 @@
     // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba($gray-darkest, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background: transparent;
     left: 0;
+    width: 100%;
+
     @media (min-width: 1200px) {
       position: absolute;
       top: 115px;
     }
-    width: 100%;
   }
 }
 
