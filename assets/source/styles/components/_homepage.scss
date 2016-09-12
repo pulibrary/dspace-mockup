@@ -93,6 +93,7 @@
 
 .home-page .news {
   position: relative;
+  min-height: 165px;
 }
 
 .home-page .news .carousel-controls {
@@ -114,11 +115,11 @@
   color: $blue-light;
 }
 
-.home-page .news .news-item {
-  margin-bottom: 20px;
-  padding-left: 115px;
-  position: relative;
-}
+// .home-page .news .news-item {
+//   margin-bottom: 20px;
+//   padding-left: 115px;
+//   position: relative;
+// }
 
 .home-page .news .thumb {
   left: 0;
@@ -186,12 +187,20 @@
 }
 
 .home-page .recent {
-  height: 361px;
+  min-height: 165px;
   position: relative;
 
   h2,
   h3 {
     margin-top: 0;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 }
 
