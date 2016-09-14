@@ -2,266 +2,272 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta name="Generator" content="DSpace 5.5-SNAPSHOT" />
-  <title>QA - OAR | Princeton University Library</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-  <!-- <link type="text/css" href="/jspui/static/pu_custom/assets/public/styles/dspace-theme.min.css" rel="stylesheet"> -->
-  <link type="text/css" href="assets/public/styles/dspace-theme.min.css" rel="stylesheet">
-  <!-- Princeton University Customization to add rendering of mathematical formulae by MathJAX -->
-  <!-- This assumes that /www/MathJax leads to a local copy if the MathJax Javascript package; see http://www.mathjax.org/  -->
-  <script type="text/javascript" src="/www/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- ASK-AXA -->
-  <link rel="shortcut icon" href="/jspui/favicon.ico" type="image/x-icon" />
-  <!-- DSPACE custom js -->
-  <script type='text/javascript' src='/jspui/static/js/holder.js'></script>
-  <script type="text/javascript" src="/jspui/utils.js"></script>
-  <script type="text/javascript" src="/jspui/static/js/choice-support.js">
-  </script>
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="Generator" content="DSpace 5.5-SNAPSHOT" />
+    <title>QA - OAR | Princeton University Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- <link type="text/css" href="/jspui/static/pu_custom/assets/public/styles/dspace-theme.min.css" rel="stylesheet"> -->
+    <link type="text/css" href="assets/public/styles/dspace-theme.min.css" rel="stylesheet">
+    <!-- Princeton University Customization to add rendering of mathematical formulae by MathJAX -->
+    <!-- This assumes that /www/MathJax leads to a local copy if the MathJax Javascript package; see http://www.mathjax.org/  -->
+    <script type="text/javascript" src="/www/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- ASK-AXA -->
+    <link rel="shortcut icon" href="/jspui/favicon.ico" type="image/x-icon" />
+    <!-- DSPACE custom js -->
+    <script type='text/javascript' src='/jspui/static/js/holder.js'></script>
+    <script type="text/javascript" src="/jspui/utils.js"></script>
+    <script type="text/javascript" src="/jspui/static/js/choice-support.js">
+    </script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
   <script src="/jspui/static/js/html5shiv.js"></script>
   <script src="/jspui/static/js/respond.min.js"></script>
 <![endif]-->
 </head>
 
 <body class="home-page">
-  <a class="sr-only" href="#main-content">Skip to main content</a>
-  <div class="wrapper">
-    <header>
-      <div class="branding">
-        <div class="container">
-          <div class="col-md-6 col-sm-12">
-            <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    <div class="wrapper">
+        <header>
+            <div class="branding">
+                <div class="container">
+                    <div class="col-md-6 col-sm-12">
+                        <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
                         <!-- <img src="/jspui/static/pu_custom/assets/public/images/logo.png" alt="Princeton University Library"> -->
                         <img src="assets/public/images/logo.png" alt="Princeton University Library">
                         <span class="site-name sr-only">Princeton University Library</span>
                     </a></h2>
-          </div>
-        </div>
-      </div>
-      <nav role="navigation" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="/jspui" class="navbar-brand" title="Open Access Repository at Princeton University">
-              <img alt="Open Access Repository at Princeton University" src="assets/public/images/oar-logo.svg">
-            </a>
-            <button data-target="#main-navigation-bar" data-toggle="collapse" class="navbar-toggle" type="button">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="main-navigation-bar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="/jspui"> About </a>
-              </li>
-              <li>
-                <a href="mailto:monikam+oarqa_feedback@princeton.edu"> Contact </a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <!-- SEARCH -->
-              <li><a href="/jspui/simple-search"><span class="glyphicon glyphicon-search"></span> Search</a></li>
-              <!-- BROWSE -->
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span> Browse <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/jspui/collection-list">Collections</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Browse items by:</li>
-                  <li><a href="#">Author</a></li>
-                  <li><a href="#">Department</a></li>
-                  <li><a href="#">Publication Date</a></li>
-                  <li><a href="#">None working</a></li>
-                </ul>
-              </li>
-              <!-- LOGIN or USER-SPECIFIC-MENU -->
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
-                  <span class="glyphicon glyphicon-user"></span> Login
-                  <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/jspui/mydspace">My OAR</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div id="main-content" class="content container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="search-block">
-            <h1 class="section-heading flex-caption"><span class="main">Search the Repository</span></h1>
-            <!-- <div class="slider flexslider background" id="search-block">
+                    </div>
+                </div>
+            </div>
+            <nav role="navigation" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="/jspui" class="navbar-brand" title="Open Access Repository at Princeton University">
+                            <img alt="Open Access Repository at Princeton University" src="assets/public/images/oar-logo.svg">
+                        </a>
+                        <button data-target="#main-navigation-bar" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="main-navigation-bar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/jspui"> About </a>
+                            </li>
+                            <li>
+                                <a href="mailto:monikam+oarqa_feedback@princeton.edu"> Contact </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- SEARCH -->
+                            <li><a href="/jspui/simple-search"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                            <!-- BROWSE -->
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span> Browse <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/jspui/collection-list">Collections</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Browse items by:</li>
+                                    <li><a href="#">Author</a></li>
+                                    <li><a href="#">Department</a></li>
+                                    <li><a href="#">Publication Date</a></li>
+                                    <li><a href="#">None working</a></li>
+                                </ul>
+                            </li>
+                            <!-- LOGIN or USER-SPECIFIC-MENU -->
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-user"></span> Login
+                                    <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/jspui/mydspace">My OAR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="main-content" class="content container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-block">
+                        <h1 class="section-heading flex-caption"><span class="main">Search the Repository</span></h1>
+                        <!-- <div class="slider flexslider background" id="search-block">
                 <img alt="" src="assets/public/images/bg.png">
             </div> -->
-            <div class="slider flexslider overlay">
-              <section class="search">
-                <!-- <h1 class="section-heading flex-caption"><span class="main">Search the Repository</span></h1> -->
-                <div class="section-content">
-                  <form method="get" action="#">
-                    <div class="row">
-                      <div class="col-md-12 col-sm-12 keywords">
-                        <div class="input-group">
-                          <input type="text" placeholder="Search - not working yet" class="form-control pull-left">
-                          <span class="input-group-btn">
+                        <div class="slider flexslider overlay">
+                            <section class="search">
+                                <!-- <h1 class="section-heading flex-caption"><span class="main">Search the Repository</span></h1> -->
+                                <div class="section-content">
+                                    <form method="get" action="#">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 keywords">
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Search - not working yet" class="form-control pull-left">
+                                                    <span class="input-group-btn">
                                     <button class="btn btn-orange" type="submit"><i class="glyphicon glyphicon-search"></i></button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!--//search-form-->
+                                    <a href="/jspui/simple-search" class="advanced-search">Advanced Search <i class="glyphicon glyphicon-chevron-right"></i></a>
+                                </div>
+                                <!--//section-content-->
+                            </section>
+                            <!--//search-->
                         </div>
-                      </div>
+                        <div class="about">
+                            <p>Open Access Repository@Princeton (OAR@Princeton) is a dedicated repository for Princeton’s research that is made openly accessible to the public under the Princeton University Open Access Policy. It currently collects journal articles and conference proceedings from its faculty. The scope of the collection may be extended in the future to include other types of scholarly materials, such as technical reports, working papers, and more. The repository is managed and maintained jointly by the Scholarly Communications Office at the Library and OIT.</p>
+                        </div>
                     </div>
-                  </form>
-                  <!--//search-form-->
-                  <a href="/jspui/simple-search" class="advanced-search">Advanced Search <i class="glyphicon glyphicon-chevron-right"></i></a>
                 </div>
-                <!--//section-content-->
-              </section>
-              <!--//search-->
-            </div>
-            <div class="about">
-              <p>Open Access Repository@Princeton (OAR@Princeton) is a dedicated repository for Princeton’s research that is made openly accessible to the public under the Princeton University Open Access Policy. It currently collects journal articles and conference proceedings from its faculty. The scope of the collection may be extended in the future to include other types of scholarly materials, such as technical reports, working papers, and more. The repository is managed and maintained jointly by the Scholarly Communications Office at the Library and OIT.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 clearfix">
-          <section class="recent panel">
-            <h1 class="section-heading text-highlight"><span class="line">Recent Submissions</span></h1>
-            <div class="carousel-controls">
-              <a data-slide="prev" href="#recent-carousel" class="prev"><i
+                <div class="col-md-8 clearfix">
+                    <section class="recent panel">
+                        <h1 class="section-heading text-highlight"><span class="line">Recent Submissions</span></h1>
+                        <div class="carousel-controls">
+                            <a data-slide="prev" href="#recent-carousel" class="prev"><i
                             class="glyphicon glyphicon-chevron-left"></i></a>
-              <a data-slide="next" href="#recent-carousel" class="next"><i
+                            <a data-slide="next" href="#recent-carousel" class="next"><i
                             class="glyphicon glyphicon-chevron-right"></i></a>
-            </div>
-            <!--//carousel-controls-->
-            <div class="section-content">
-              <div data-interval="5000" class="recent-carousel carousel slide" id="recent-carousel">
-                <div class="carousel-inner">
-                  <div class='item active'>
-                    <h2><a href='/jspui/handle/99999/fk4pv6rk78'>Discovery and dissection of metabolic oscillations in the microaerobic nitric oxide response network of Escherichia coli</a></h2>
-                    <h3>Robinson,&#x20;Jonathan&#x20;L, Brynildsen,&#x20;Mark&#x20;P</h3>
-                  </div>
-                  <div class='item '>
-                    <h2><a href='/jspui/handle/99999/fk4sn0fh1f'>Ab initio kinetics studies of hydrogen atom abstraction from methyl propanoate</a></h2>
-                    <h3>Tan,&#x20;Ting, Yang,&#x20;Xueliang, Ju,&#x20;Yiguang, Carter,&#x20;Emily&#x20;A</h3>
-                  </div>
-                  <div class='item '>
-                    <h2><a href='/jspui/handle/99999/fk4x06br14'>A size threshold governs Caenorhabditis elegans developmental progression</a></h2>
-                    <h3>Uppaluri,&#x20;Sravanti, Brangwynne,&#x20;Clifford&#x20;P</h3>
-                  </div>
-                  <div class='item '>
-                    <h2><a href='/jspui/handle/99999/fk4fx7j99h'>Norm Perception as a Vehicle for Social Change</a></h2>
-                    <h3>Tankard,&#x20;Margaret&#x20;E, Paluck,&#x20;Elizabeth&#x20;Levy</h3>
-                  </div>
-                  <div class='item '>
-                    <h2><a href='/jspui/handle/99999/fk42r4386q'>Splitting of the Fermi Contour of Quasi-2D Electrons in Parallel Magnetic Fields</a></h2>
-                    <h3>Mueed,&#x20;MA, Kamburov,&#x20;D, Shayegan,&#x20;M, Pfeiffer,&#x20;LN, West,&#x20;KW, Baldwin,&#x20;KW, Winkler,&#x20;R</h3>
-                  </div>
-                </div>
-                <!--//carousel-inner-->
-              </div>
-              <!--//recent-carousel-->
-            </div>
-            <!--//section-content-->
-          </section>
-          <!--//recent-->
-          <section class="news panel">
-            <h1 class="section-heading text-highlight"><span class="line">Latest News</span></h1>
-            <!-- <div class="carousel-controls">
+                        </div>
+                        <!--//carousel-controls-->
+                        <div class="section-content">
+                            <div data-interval="5000" class="recent-carousel carousel slide" id="recent-carousel">
+                                <div class="carousel-inner">
+                                    <div class='item active'>
+                                        <h2><a href='/jspui/handle/99999/fk4pv6rk78'>Discovery and dissection of metabolic oscillations in the microaerobic nitric oxide response network of Escherichia coli</a></h2>
+                                        <h3>Robinson,&#x20;Jonathan&#x20;L, Brynildsen,&#x20;Mark&#x20;P</h3>
+                                    </div>
+                                    <div class='item '>
+                                        <h2><a href='/jspui/handle/99999/fk4sn0fh1f'>Ab initio kinetics studies of hydrogen atom abstraction from methyl propanoate</a></h2>
+                                        <h3>Tan,&#x20;Ting, Yang,&#x20;Xueliang, Ju,&#x20;Yiguang, Carter,&#x20;Emily&#x20;A</h3>
+                                    </div>
+                                    <div class='item '>
+                                        <h2><a href='/jspui/handle/99999/fk4x06br14'>A size threshold governs Caenorhabditis elegans developmental progression</a></h2>
+                                        <h3>Uppaluri,&#x20;Sravanti, Brangwynne,&#x20;Clifford&#x20;P</h3>
+                                    </div>
+                                    <div class='item '>
+                                        <h2><a href='/jspui/handle/99999/fk4fx7j99h'>Norm Perception as a Vehicle for Social Change</a></h2>
+                                        <h3>Tankard,&#x20;Margaret&#x20;E, Paluck,&#x20;Elizabeth&#x20;Levy</h3>
+                                    </div>
+                                    <div class='item '>
+                                        <h2><a href='/jspui/handle/99999/fk42r4386q'>Splitting of the Fermi Contour of Quasi-2D Electrons in Parallel Magnetic Fields</a></h2>
+                                        <h3>Mueed,&#x20;MA, Kamburov,&#x20;D, Shayegan,&#x20;M, Pfeiffer,&#x20;LN, West,&#x20;KW, Baldwin,&#x20;KW, Winkler,&#x20;R</h3>
+                                    </div>
+                                </div>
+                                <!--//carousel-inner-->
+                            </div>
+                            <!--//recent-carousel-->
+                        </div>
+                        <!--//section-content-->
+                    </section>
+                    <!--//recent-->
+                    <section class="news panel">
+                        <h1 class="section-heading text-highlight"><span class="line">Latest News</span></h1>
+                        <!-- <div class="carousel-controls">
                 <a class="prev" href="#news-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                 <a class="next" href="#news-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
             </div> -->
-            <!--//carousel-controls-->
-            <div class="section-content clearfix">
-              <div id="news-carousel" class="news-carousel carousel slide" data-interval="8000">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="news-item">
-                            <!-- <h2 class="title">Princeton Open Access</h2> -->
-                            <p>Princeton Open Access - Collecting articles published by faculty - making publicly available to anybody - breaking the publisher pay wall.</p>
+                        <!--//carousel-controls-->
+                        <div class="section-content clearfix">
+                            <div id="news-carousel" class="news-carousel carousel slide" data-interval="8000">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="news-item">
+                                            <!-- <h2 class="title">Princeton Open Access</h2> -->
+                                            <p>Open Access Week Event on October 25th, 2016 from 1:30-3:00 at Friend Center.<br> Copyright in an Open Access World: The Balance between Promoting the Access and Protecting the Rights. </p>
+                                            <p>Open Access Week Event on October 25th, 2016 from 1:30-3:00 at Friend Center. <br>Faculty Panel: What Open Access Means to Me.
+                                            </p>
+                                        </div>
+                                        <!--//news-item-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!--//news-item-->
-                    </div>
+                    </section>
+                    <!-- //news -->
                 </div>
-              </div>
+                <div class="col-md-2 featured-blocks">
+                    <a href="/jspui/collection-list">
+                        <section class="blocks panel">
+                            <h1 class="section-heading text-highlight"><span class="line">Collections</span></h1>
+                            <div class="section-content">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                            <!--//section-content-->
+                        </section>
+                    </a>
+                    <section class="blocks panel">
+                        <h1 class="section-heading text-highlight"><span class="line">Copyright</span></h1>
+                        <div class="section-content">
+                            <ul>
+                                <li><a href="about.html">OAR Terms of Use</a></li>
+                                <li><a href="http://www.princeton.edu/copyright/">Copyright@PU</a></li>
+                                <li><a href="">Creative commons</a></li>
+                            </ul>
+                        </div>
+                        <!--//section-content-->
+                    </section>
+                </div>
+                <div class="col-md-2 featured-blocks">
+                    <section class="blocks panel">
+                        <h1 class="section-heading text-highlight"><span class="line">Helpful Hints</span></h1>
+                        <div class="section-content">
+                            <ul>
+                                <li><a href="https://www.princeton.edu/ats/forms/open-access/">Self Submission</a></li>
+                                <li><a href="http://www.princeton.edu/dof/policies/publ/fac/open-access-policy/">Open Access Policy</a></li>
+                                <li><a href="http://library.princeton.edu/services/scholarly-communications">Scholary Communications Office</a></li>
+                            </ul>
+                        </div>
+                        <!--//section-content-->
+                    </section>
+                    <a href="/jspui/statistics">
+                        <section class="blocks panel">
+                            <h1 class="section-heading text-highlight"><span class="line">Statistics</span></h1>
+                            <div class="section-content">
+                                <ul class="stats">
+                                    <li class="total-items"><span class="stat-heading">Total Items:</span> <span class="total-items">123</span></li>
+                                    <li class="total-visits"><span class="stat-heading">Total Visits:</span> <span class="total-visits">123</span></li>
+                                </ul>
+                            </div>
+                            <!--//section-content-->
+                        </section>
+                    </a>
+                </div>
             </div>
-          </section>
-          <!-- //news -->
+            <!-- end row-->
         </div>
-        <div class="col-md-2 featured-blocks">
-          <a href="/jspui/collection-list"><section class="blocks panel">
-            <h1 class="section-heading text-highlight"><span class="line">Collections</span></h1>
-            <div class="section-content">
-              <span class="glyphicon glyphicon-th"></span>
-            </div>
-            <!--//section-content-->
-          </section></a>
-          <section class="blocks panel">
-            <h1 class="section-heading text-highlight"><span class="line">Copyright</span></h1>
-            <div class="section-content">
-              <ul>
-                <li><a href="about.html">OAR Terms of Use</a></li>
-                <li><a href="http://www.princeton.edu/copyright/">Copyright@PU</a></li>
-                <li><a href="">Creative commons</a></li>
-              </ul>
-            </div>
-            <!--//section-content-->
-          </section>
-        </div>
-        <div class="col-md-2 featured-blocks">
-          <section class="blocks panel">
-            <h1 class="section-heading text-highlight"><span class="line">Helpful Hints</span></h1>
-            <div class="section-content">
-              <ul>
-                <li><a href="https://www.princeton.edu/ats/forms/open-access/">Self Submission</a></li>
-                <li><a href="http://www.princeton.edu/dof/policies/publ/fac/open-access-policy/">Open Access Policy</a></li>
-                <li><a href="http://library.princeton.edu/services/scholarly-communications">Scholary Communications Office</a></li>
-              </ul>
-            </div>
-            <!--//section-content-->
-          </section>
-          <a href="/jspui/statistics"><section class="blocks panel">
-            <h1 class="section-heading text-highlight"><span class="line">Statistics</span></h1>
-            <div class="section-content">
-              <ul class="stats">
-                <li class="total-items"><span class="stat-heading">Total Items:</span> <span class="total-items">123</span></li>
-                <li class="total-visits"><span class="stat-heading">Total Visits:</span> <span class="total-visits">123</span></li>
-              </ul>
-            </div>
-            <!--//section-content-->
-          </section></a>
-        </div>
-      </div>
-      <!-- end row-->
+        <!-- main content -->
     </div>
-    <!-- main content -->
-  </div>
-  <!-- wrapper -->
-  <footer class="footer">
-    <div class="bottom-bar">
-      <div class="container">
-        <div class="row">
-          <small class="pull-right copyright col-md-6 col-sm-12 col-xs-12">&copy; 2016 <a href="http://www.princeton.edu/main/">Princeton University</a>. All rights reserved. Powered by <a href="http://www.dspace.org/">DSpace</a>.</small>
-          <small class="pull-left col-md-6 col-sm-12 col-xs-12">OAR@Princeton - A joint effort between <a href="http://library.princeton.edu/">Princeton University Library</a> and the <a href="http://www.princeton.edu/oit/">Office of Information Technology</a>. Repository services managed by the <a href="https://library.princeton.edu/services/scholarly-communications">Scholarly Communications Office</a>.</small>
+    <!-- wrapper -->
+    <footer class="footer">
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="pull-right copyright col-md-6 col-sm-12 col-xs-12">&copy; 2016 <a href="http://www.princeton.edu/main/">Princeton University</a>. All rights reserved. Powered by <a href="http://www.dspace.org/">DSpace</a>.</small>
+                    <small class="pull-left col-md-6 col-sm-12 col-xs-12">OAR@Princeton - A joint effort between <a href="http://library.princeton.edu/">Princeton University Library</a> and the <a href="http://www.princeton.edu/oit/">Office of Information Technology</a>. Repository services managed by the <a href="https://library.princeton.edu/services/scholarly-communications">Scholarly Communications Office</a>.</small>
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
         </div>
-        <!--//row-->
-      </div>
-      <!--//container-->
-    </div>
-    <!--//bottom-bar-->
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- <script src="/jspui/static/pu_custom/assets/public/scripts/dspace.scripts.min.js"></script> -->
-  <script src="assets/public/scripts/dspace.scripts.min.js"></script>
+        <!--//bottom-bar-->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="/jspui/static/pu_custom/assets/public/scripts/dspace.scripts.min.js"></script> -->
+    <script src="assets/public/scripts/dspace.scripts.min.js"></script>
 </body>
 
 </html>
