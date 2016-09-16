@@ -1,0 +1,40 @@
+.panel-heading a {
+  color: $white;
+}
+
+.commit,
+.edit,
+.taskLater,
+.taskReturn {
+  margin-bottom: 1em;
+
+  .form-control {
+    height: 48px;
+    padding: 12px;
+  }
+}
+
+.help-block {
+  clear: both;
+}
+
+.col-md-2 .btn {
+  width: 100%;
+}
+
+.form-group .label-required:after {
+  color: $red-dark;
+  content: "*";
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.required {
+  color: $red-dark;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  vertical-align: middle;
+}
