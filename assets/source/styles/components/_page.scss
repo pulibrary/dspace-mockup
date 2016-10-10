@@ -476,3 +476,13 @@ ol.breadcrumb {
 .page-wrapper .page-sidebar .testimonials-carousel .carousel-controls a:hover .fa {
   background: $blue-dark;
 }
+
+.pager li {
+  display: inline-block;
+  vertical-align: middle;
+
+  &.previous,
+  &.next {
+    width: 20%;
+  }
+}
