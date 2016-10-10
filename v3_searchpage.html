@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="Generator" content="DSpace 5.5-SNAPSHOT" />
+    <title>QA - OAR | Princeton University Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- <link type="text/css" href="/jspui/static/pu_custom/assets/public/styles/dspace-theme.min.css" rel="stylesheet"> -->
+    <link type="text/css" href="assets/public/styles/dspace-theme.min.css" rel="stylesheet">
+    <!-- Princeton University Customization to add rendering of mathematical formulae by MathJAX -->
+    <!-- This assumes that /www/MathJax leads to a local copy if the MathJax Javascript package; see http://www.mathjax.org/  -->
+    <script type="text/javascript" src="/www/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- ASK-AXA -->
+    <link rel="shortcut icon" href="/jspui/favicon.ico" type="image/x-icon" />
+    <!-- DSPACE custom js -->
+    <script type='text/javascript' src='/jspui/static/js/holder.js'></script>
+    <script type="text/javascript" src="/jspui/utils.js"></script>
+    <script type="text/javascript" src="/jspui/static/js/choice-support.js">
+    </script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="/jspui/static/js/html5shiv.js"></script>
+  <script src="/jspui/static/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    <div class="wrapper">
+        <header>
+            <div class="branding">
+                <div class="container">
+                    <div class="col-md-6 col-sm-12">
+                        <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
+                        <!-- <img src="/jspui/static/pu_custom/assets/public/images/logo.png" alt="Princeton University Library"> -->
+                        <img src="assets/public/images/logo.png" alt="Princeton University Library">
+                        <span class="site-name sr-only">Princeton University Library</span>
+                    </a></h2>
+                    </div>
+                </div>
+            </div>
+            <nav role="navigation" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="/jspui" class="navbar-brand" title="Open Access Repository at Princeton University">
+                            <img alt="Open Access Repository at Princeton University" src="assets/public/images/oar-logo.svg">
+                        </a>
+                        <button data-target="#main-navigation-bar" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="main-navigation-bar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/jspui"> About </a>
+                            </li>
+                            <li>
+                                <a href="mailto:monikam+oarqa_feedback@princeton.edu"> Contact </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- SEARCH -->
+                            <li><a href="/jspui/simple-search"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                            <!-- BROWSE -->
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span> Browse <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/jspui/collection-list">Collections</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Browse items by:</li>
+                                    <li><a href="#">Author</a></li>
+                                    <li><a href="#">Department</a></li>
+                                    <li><a href="#">Publication Date</a></li>
+                                    <li><a href="#">None working</a></li>
+                                </ul>
+                            </li>
+                            <!-- LOGIN or USER-SPECIFIC-MENU -->
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-user"></span> Login
+                                    <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/jspui/mydspace">My OAR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="main-content" class="content container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Search</h2>
+                    <div class="discovery-search-form panel">
+                        <div class="discovery-query panel-heading">
+                            <form action="simple-search" method="get" name="search">
+                                <!--                                 <input type="hidden" value="t" name="expanded">
+ -->
+                                <!-- <div class="ds-form-item row"> -->
+                                <div class="col-sm-3">
+                                    <!-- <p> -->
+                                    <select class="form-control" name="location" id="tlocation">
+                                        <option selected="selected" value="/">All of DataSpace</option>
+                                        <option value="88435/dsp01k643b120w">
+                                            Astrophysical Sciences</option>
+                                        <option value="88435/dsp01bg257f052">
+                                            Civil and Environmental Engineering</option>
+                                        <option value="88435/dsp012b88qf40b">
+                                            Department of Geosciences</option>
+                                        <option value="88435/dsp011z40ks889">
+                                            Department of Slavic Languages and Literatures</option>
+                                        <option value="88435/dsp01th83kz360">
+                                            Education Research Section</option>
+                                        <option value="88435/dsp01st74cq47h">
+                                            Faculty Publications</option>
+                                        <option value="88435/dsp01c821gj770">
+                                            Industrial Relations Section</option>
+                                        <option value="88435/dsp01m326m175b">
+                                            Liechtenstein Institute on Self-Determination</option>
+                                        <option value="88435/dsp014q77fr339">
+                                            Office of Information Technology</option>
+                                        <option value="88435/dsp0147429c369">
+                                            Princeton Neuroscience Institute</option>
+                                        <option value="88435/dsp01pz50gz45g">
+                                            Princeton Plasma Physics Laboratory</option>
+                                        <option value="88435/dsp01td96k251d">
+                                            Princeton University Doctoral Dissertations, 2011-2015</option>
+                                        <option value="88435/dsp01g732d9019">
+                                            Princeton University Library</option>
+                                        <option value="88435/dsp019c67wm88m">
+                                            Princeton University Senior Theses, 1924-2015</option>
+                                        <option value="88435/dsp01h989r3236">
+                                            Seeger Center for Hellenic Studies</option>
+                                        <option value="88435/dsp01g445cd134">
+                                            Woodrow Wilson School of Public and International Affairs</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="input-group">
+                                        <label for="query" class="sr-only">Search</label>
+                                        <input class="form-control" type="text" id="query" name="query" value="">
+                                        <span class="input-group-btn"><input type="submit" id="main-query-submit" class="btn btn-orange" value="Search"></span>
+                                        <span class="input-group-btn"><button class="btn btn-default form-control" href="/jspui/simple-search">Reset</button></span>
+                                    </p>
+                                </div>
+                                <input type="hidden" value="10" name="rpp">
+                                <input type="hidden" value="score" name="sort_by">
+                                <input type="hidden" value="desc" name="order">
+                                <div class="discovery-search-filters panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>Active filters:</h4>
+                                            <p class="discovery-search-filters-hint">Click 'X' to remove a filter</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <select id="filter_field_1" class="form-control" name="filter_field_1">
+                                            <option value="title" selected="selected">Title</option><option value="author">Author</option><option value="dateIssued">Date Issued</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select id="filter_type_1" class="form-control" name="filter_type_1">
+                                            <option value="equals" selected="selected">Equals</option><option value="contains">Contains</option><option value="authority">ID</option><option value="notequals">Not Equals</option><option value="notcontains">Not Contains</option><option value="notauthority">Not ID</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="input-group">
+                                                <input type="text" class="form-control" id="filter_value_1" name="filter_value_1" value="something">
+                                                <span class="input-group-btn">
+                                                <input class="btn btn-default form-control" type="submit" id="submit_filter_remove_1" name="submit_filter_remove_1" value="X"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4>Add filters:</h4>
+                                            <p class="discovery-search-filters-hint">Use filters to refine the search results.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <form action="simple-search" method="get" name="search1">
+                                            <input type="hidden" value="t" name="expanded">
+                                            <input type="hidden" value="" name="location">
+                                            <input type="hidden" value="" name="query">
+                                            <div class="col-sm-3">
+                                                <select class="form-control" id="filtername" name="filtername">
+                                                    <option value="title">Title</option>
+                                                    <option value="author">Author</option>
+                                                    <option value="subject">Subject</option>
+                                                    <option value="dateIssued">Date Issued</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <select class="form-control" id="filtertype" name="filtertype">
+                                                    <option value="equals">Equals</option>
+                                                    <option value="contains">Contains</option>
+                                                    <option value="authority">ID</option>
+                                                    <option value="notequals">Not Equals</option>
+                                                    <option value="notcontains">Not Contains</option>
+                                                    <option value="notauthority">Not ID</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="input-group">
+                                                    <input class="form-control ui-autocomplete-input" type="text" id="filterquery" name="filterquery" autocomplete="off">
+                                                    <span class="input-group-btn">
+                                  <input type="submit" class="btn btn-default" value="Add" onclick="return validateFilters()">
+                                </span>
+                                                </p>
+                                            </div>
+                                            <input type="hidden" value="10" name="rpp">
+                                            <input type="hidden" value="score" name="sort_by">
+                                            <input type="hidden" value="desc" name="order">
+                                        </form>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="discovery-pagination-controls panel">
+                                <form action="simple-search" method="get">
+                                    <input type="hidden" value="" name="location">
+                                    <input type="hidden" value="" name="query">
+                                    <label for="rpp">Results/Page</label>
+                                    <select name="rpp">
+                                        <option value="5">5</option>
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                        <option value="60">60</option>
+                                        <option value="65">65</option>
+                                        <option value="70">70</option>
+                                        <option value="75">75</option>
+                                        <option value="80">80</option>
+                                        <option value="85">85</option>
+                                        <option value="90">90</option>
+                                        <option value="95">95</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                    <label for="sort_by">Sort items by</label>
+                                    <select name="sort_by">
+                                        <option value="score">Relevance</option>
+                                        <option value="dc.title_sort">Title</option>
+                                        <option value="dc.date.issued_dt">Issue Date</option>
+                                    </select>
+                                    <label for="order">In order</label>
+                                    <select name="order">
+                                        <option value="ASC">Ascending</option>
+                                        <option value="DESC" selected="selected">Descending</option>
+                                    </select>
+                                    <label for="etal">Authors/record</label>
+                                    <select name="etal">
+                                        <option value="0" selected="selected">All</option>
+                                        <option value="1">1</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                    <input class="btn btn-default" type="submit" name="submit_search" value="Update">
+                                </form>
+                            </div>
+                            <!-- give a content to the div -->
+                        </div>
+                    </div>
+                    <div class="discovery-result-results">
+                        <div class="panel">
+                            <div class="panel-heading">Item hits: <span class="discovery-result-pagination">Results 1-10 of 70257</span>
+                            </div>
+                            <table align="center" class="table" summary="This table browses all dspace content">
+                                <tbody>
+                                    <tr>
+                                        <th id="t1" class="oddRowEvenCol">Issue Date</th>
+                                        <th id="t2" class="oddRowOddCol">Title</th>
+                                        <th id="t3" class="oddRowEvenCol">Author(s)</th>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">15-Sep-2011</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp01h128nd697">Cap rock fracturing criteria for assessment of CO2 storage capacity</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Cuisiat, Fabrice</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">13-Apr-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp01bc386j227">The Demand for Health Insurance among Uninsured Americans: Results of a Survey Experiment and Implications for Policy</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Krueger, Alan B.; Kuziemko, Ilyana</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">20-Jan-2012</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp018s45q878b">njteach</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Rouse, Cecilia</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">11-Jul-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp012v23vt39h">Why do Plaintiffs Lose Appeals? Biased Trial Courts, Litigious Losers, or Low Trial Win Rates?</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Eisenberg, Theodore; Farber, Henry S.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">14-Dec-2011</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp01zg64tk94k">Minimum Wages and Employment: Tseries</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Krueger, Alan B.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">14-Dec-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp0170795766s">Minimum Wages and Employment: Chapter 4</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Krueger, Alan B.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">14-Dec-2011</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp0137720c74j">Minimum Wages and Employment: Texas</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Krueger, Alan B.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1-Nov-1974</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp01h989r322j">Wage Determination in the Public Sector</a></td>
+                                        <td headers="t3" class="oddRowEvenCol">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">20-Jan-2012</td>
+                                        <td headers="t2" class="evenRowOddCol"><a href="/jspui/handle/88435/dsp015138jd87v">Returns</a></td>
+                                        <td headers="t3" class="evenRowEvenCol"><em>Rouse, Cecilia</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">21-Dec-2011</td>
+                                        <td headers="t2" class="oddRowOddCol"><a href="/jspui/handle/88435/dsp012801pg35n">Dataset for 1994 Ashenfelter/Krueger Twins Paper</a></td>
+                                        <td headers="t3" class="oddRowEvenCol"><em>Krueger, Alan B.; Ashenfelter, Orley</em></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="discovery-result-pagination">
+                        <ul class="pagination pull-right">
+                            <li class="disabled"><span>previous</span></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">2</a></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=20">3</a></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=30">4</a></li>
+                            <li class="disabled"><span>...</span></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=70250">7026</a></li>
+                            <li><a href="/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="pull-right copyright col-md-6 col-sm-12 col-xs-12">&copy; 2016 <a href="http://www.princeton.edu/main/">Princeton University</a>. All rights reserved. Powered by <a href="http://www.dspace.org/">DSpace</a>.</small>
+                    <small class="pull-left col-md-6 col-sm-12 col-xs-12">OAR@Princeton - A joint effort between <a href="http://library.princeton.edu/">Princeton University Library</a> and the <a href="http://www.princeton.edu/oit/">Office of Information Technology</a>. Repository services managed by the <a href="https://library.princeton.edu/services/scholarly-communications">Scholarly Communications Office</a>.</small>
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//bottom-bar-->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="/jspui/static/pu_custom/assets/public/scripts/dspace.scripts.min.js"></script> -->
+    <script src="assets/public/scripts/dspace.scripts.min.js"></script>
+</body>
+
+</html>
+
