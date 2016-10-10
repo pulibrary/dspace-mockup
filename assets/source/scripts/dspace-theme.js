@@ -5,5 +5,5 @@ $('.media.well').click(function() {
 });
 
 $('.carousel').carousel({
-  interval: 4000
+  interval: 5000
 });
